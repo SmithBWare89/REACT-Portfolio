@@ -5,13 +5,8 @@ import '../../App.css';
 
 export default function Portfolio() {
     const imageStyle = {
-        width: '800px',
-        height: '300px'
-    }
-
-    const paragraphStyle = {
-        position: 'relative',
-        wordWrap: 'break-word'
+        width: 'clamp(23ch, 800, 46ch)',
+        height: 'clamp(23ch, 300px, 46ch)'
     }
 
     const [drinkologyOpen, setDrinkologyOpen] = useState(false);
@@ -36,7 +31,7 @@ export default function Portfolio() {
                     <Modal.Content>
                         <Container>
                                 <h4>Summary</h4>
-                                <p style={paragraphStyle}>
+                                <p>
                                     Drinkology was created to allow end users to look up cocktail recipes, and master the art of mixology in the comfort of their own home. 
                                     Members are able to sign in,save receipes to their account and leave reviews.
                                 </p>
@@ -77,7 +72,7 @@ export default function Portfolio() {
                     <Modal.Content>
                         <Container>
                                 <h4>Summary</h4>
-                                <p style={paragraphStyle}>
+                                <p>
                                     This project is intended to be a demonstration of a progressive web application. 
                                     It utilizes a service worker to register data caches in the browser to not only store files vital to the function of this app but also a snapshot of 
                                     data so the user will be able to maintain an accurate budget when they're in low or no signal areas. 
@@ -114,7 +109,7 @@ export default function Portfolio() {
                 <Modal.Content>
                     <Container>
                             <h4>Summary</h4>
-                            <p style={paragraphStyle}>
+                            <p>
                                 This project is intended to be a demonstration of a RESTful API using a combination of MongoDB, Express, Mongoose, and Moment. 
                                 It's been expanded to include a minimalist front end to allow for a web app representation of the data being created in our database. 
                                 Further developments for this project would be to update the formatting of the project along with streamlining the API routes.
