@@ -13,3 +13,19 @@ body {
 .ui.inverted.menu .active.item {
     background-color: var(--orange) !important;
 }
+
+#contactForm {
+    display: grid !important;
+    place-items: center !important;
+    color: var(--white) !important;
+}
+
+#contactForm label {
+    color: var(--white) !important;
+    font-size: 20px !important;
+}
+
+.error-text {
+    color: var(--orange);
+    font-size: 2em;
+}
