@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
+import Portfolio from './components/Portfolio';
 import './App.css';
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
         !contactSelected
           ? (
             <>
-              <h1>This Text</h1>
+              <Portfolio />
             </>
           ) : (
             <ContactForm />
