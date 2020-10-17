@@ -1,0 +1,15 @@
+:root {
+    --white: #f7f7ff;
+    --orange: #fc5130;
+    --carolina: #279af1;
+    --blueblack: #001427;
+    --smoky: #131112;
+}
+
+body {
+    background-color: var(--smoky);
+}
+
+.ui.inverted.menu .active.item {
+    background-color: var(--orange) !important;
+}

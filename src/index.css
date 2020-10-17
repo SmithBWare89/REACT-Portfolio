@@ -1,0 +1,11 @@
+:root {
+    --white: #f7f7ff;
+    --orange: #fc5130;
+    --carolina: #279af1;
+    --blueblack: #001427;
+    --smoky: #131112;
+}
+
+.blue:active{
+    color: var(--orange) !important;
+}
