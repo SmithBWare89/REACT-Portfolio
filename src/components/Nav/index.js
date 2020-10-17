@@ -2,7 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Menu, Segment, Transition } from 'semantic-ui-react';
 import '../../App.css'
 
-export default function Nav() {
+export default function Nav(props) {
+    const {
+        navLinks,
+        setCurrentLink,
+        currentLink,
+        contactSelected,
+        setContactSelected
+    } = props;
+
     const styleOptions = {
         backgroundColor: '#001427',
         color: '#f7f7ff',
@@ -19,10 +27,14 @@ export default function Nav() {
     ];
 
     const [menuState, setMenuState] = useState('Home');
+    function handleMenuClick(e, { name }) {
+        setMenuState(name);
+        setContactSelected(false);
+    }
+
     const [animationState, setAnimationState] = useState({
         animation: transitions[0],
-        duration: 500,
-        visible: true
+        duration: 700
     });
 
     const handleAnimation = () => {
@@ -32,6 +44,7 @@ export default function Nav() {
             }
         )
     }
+
     useEffect(() => {
         const transitionSelected = Math.floor(Math.random() * 7)
         setAnimationState({
@@ -39,12 +52,11 @@ export default function Nav() {
             duration: 700,
             visible: true
         })
-    }, [animationState.visible])
+    },[animationState.visible])
 
-    function handleMenuClick(e, { name }) {
-        setMenuState(name);
-    }
-
+    useEffect(() => {
+        document.title = `${currentLink}`
+    }, [currentLink])
 
     return (
     <Segment 
@@ -56,7 +68,10 @@ export default function Nav() {
             pointing 
             secondary
         >
-            <Menu.Item name='myName'>
+            {/* Animated Name/Banner */}
+            <Menu.Item 
+                name='myName'
+            >
                 <Transition
                     animation={animationState.animation}
                     duration={animationState.duration}
@@ -65,37 +80,29 @@ export default function Nav() {
                     <span onClick={handleAnimation}>Stephon Smith</span>
                 </Transition>
             </Menu.Item>
-            <Menu.Item
-                name='Home'
-                active={menuState === 'Home'}
-                onClick={handleMenuClick}
-            >
-                Home
-            </Menu.Item>
-            <Menu.Item
-                name='About'
-                active={menuState === 'About'}
-                onClick={handleMenuClick}
-            >
-                About
-            </Menu.Item>
-
-            <Menu.Item
-                name='Portfolio'
-                active={menuState === 'Portfolio'}
-                onClick={handleMenuClick}
-            >
-                Portfolio
-            </Menu.Item>
-
-            <Menu.Item
-                name='contactMe'
-                active={menuState === 'contactMe'}
-                onClick={handleMenuClick}
-                
-            >
-                Contact Me
-            </Menu.Item>
+            {/* Map over nav link names and create them */}
+            {navLinks.map((link) => {
+                const {name} = link
+                return <Menu.Item
+                    name={name}
+                    active={menuState === name}
+                    onClick={handleMenuClick}
+                    className={
+                        name === 'Contact'
+                            ? `${currentLink === name && setContactSelected(true) && 'navActive'}`
+                            : `${currentLink === name && !contactSelected && 'navActive'}`
+                    }
+                    key={link.name}
+                 >
+                    <span
+                        onClick={() => {
+                            setCurrentLink(link.name);
+                        }}
+                    >
+                        {link.name}
+                    </span>
+                </Menu.Item>
+            })}
         </Menu>
     </Segment>
     )

@@ -1,14 +1,45 @@
-import React from 'react';
+import React, {useState} from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import './App.css';
 
 function App() {
+  const [navLinks] = useState([
+    {
+      name: 'Home'
+    },
+    {
+      name: 'About'
+    },
+    {
+      name: 'Portfolio'
+    },
+    {
+      name: 'Contact'
+    }
+  ])
+  const [currentLink, setCurrentLink] = useState(navLinks[0].name);
+  const [contactSelected, setContactSelected] = useState(false);
   return (
     <main>
-      <Nav />
-      <ContactForm />
+      <Nav 
+        navLinks={navLinks}
+        setCurrentLink={setCurrentLink}
+        currentLink={currentLink}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      />
+      {
+        !contactSelected
+          ? (
+            <>
+              <h1>This Text</h1>
+            </>
+          ) : (
+            <ContactForm />
+          )
+      }
     </main>
   );
 }
