@@ -29,17 +29,21 @@ export default function ContactForm() {
                 : setErrorMessage('');
         } 
 
-        if (evt.target.name === 'firstName' && !evt.target.value.length) {
-            setErrorMessage(`First name is required.`);
-        } else if (evt.target.name === 'lastName' && !evt.target.value.length) {
-            setErrorMessage(`Last name is required.`);
-        } else if (evt.target.name === 'message' && !evt.target.value.length) {
-            setErrorMessage(`A message is required.`);
-        } else if (evt.target.name === 'email' && !evt.target.value.length) {
-            setErrorMessage(`An email is required.`);
-        } else {
-            setErrorMessage('');
-        }
+        // If first name selected but input is empty
+        evt.target.name === 'firstName' && !evt.target.value.length
+            // Set error message
+            ? setErrorMessage(`First name is required.`)
+            // Else If
+            : evt.target.name === 'lastName' && !evt.target.value.length
+                ? setErrorMessage(`Last name is required.`)
+                // Else If
+                : evt.target.name === 'message' && !evt.target.value.length
+                    ? setErrorMessage(`A message is required.`)
+                    // Else If
+                    : evt.target.name === 'email' && !evt.target.value.length
+                        ? setErrorMessage(`An email is required.`)
+                        // Else
+                        : setErrorMessage('');
 
         setFormState({
             ...formState,
