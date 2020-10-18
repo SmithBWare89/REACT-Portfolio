@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea9a25df454e46e1d97d9cc41870660f",
+    "revision": "2bac734895d38edc9a35c407e2d55c40",
     "url": "/REACT-portfolio/index.html"
   },
   {
-    "revision": "2224ba0a166089ae17bb",
+    "revision": "bdcd6e83b892d83152e1",
     "url": "/REACT-portfolio/static/css/2.72381884.chunk.css"
   },
   {
-    "revision": "9289eca58a0e62f8c9af",
+    "revision": "a15054cc4d2153d8aa7c",
     "url": "/REACT-portfolio/static/css/main.400b2460.chunk.css"
   },
   {
-    "revision": "2224ba0a166089ae17bb",
-    "url": "/REACT-portfolio/static/js/2.33ff6de3.chunk.js"
+    "revision": "bdcd6e83b892d83152e1",
+    "url": "/REACT-portfolio/static/js/2.bac4ac30.chunk.js"
   },
   {
     "revision": "1a1a42c150bd05496b97b265c552c789",
-    "url": "/REACT-portfolio/static/js/2.33ff6de3.chunk.js.LICENSE.txt"
+    "url": "/REACT-portfolio/static/js/2.bac4ac30.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9289eca58a0e62f8c9af",
-    "url": "/REACT-portfolio/static/js/main.8e8bb32e.chunk.js"
+    "revision": "a15054cc4d2153d8aa7c",
+    "url": "/REACT-portfolio/static/js/main.99b1599e.chunk.js"
   },
   {
     "revision": "a65105b066a40284b1c4",
@@ -94,5 +94,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/REACT-portfolio/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "234fc5c7fc1e5e4bf8ef8aea5edc3564",
+    "url": "/REACT-portfolio/static/media/pwa-budget.234fc5c7.png"
   }
 ]);
