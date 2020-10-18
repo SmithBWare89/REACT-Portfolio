@@ -66,7 +66,7 @@ export default function Portfolio() {
                         }
                     }}
                     open={pwaBudgetOpen}
-                    trigger={<Image src="../../assets/images/pwa-budget.png" alt="2" style={imageStyle} data-name='pwa-budget'/>}
+                    trigger={<Image src={require("../../assets/images/pwa-budget.png")} alt="2" style={imageStyle} data-name='pwa-budget'/>}
                 >
                     <Header>Budget Tracker PWA</Header>
                     <Modal.Content>
@@ -103,7 +103,7 @@ export default function Portfolio() {
                     }
                 }}
                 open={soShulOpen}
-                trigger={<Image src="../../assets/images/so-shul.png" alt="3" style={imageStyle} data-name='so-shul'/>}
+                trigger={<Image src={require('../../assets/images/so-shul.png')} alt="3" style={imageStyle} data-name='so-shul'/>}
             >
                 <Header>So-Shul RESTful API</Header>
                 <Modal.Content>
