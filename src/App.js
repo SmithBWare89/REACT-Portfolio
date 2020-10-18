@@ -3,25 +3,37 @@ import 'semantic-ui-css/semantic.min.css';
 import Nav from './components/Nav';
 import ContactForm from './components/Contact';
 import Portfolio from './components/Portfolio';
+import Home from './components/Home';
 import './App.css';
 
 function App() {
-  const [navLinks] = useState([
-    {
-      name: 'Home'
-    },
-    {
-      name: 'About'
-    },
-    {
-      name: 'Portfolio'
-    },
-    {
-      name: 'Contact'
-    }
-  ])
-  const [currentLink, setCurrentLink] = useState(navLinks[0].name);
+  // const [navLinks] = useState([
+  //   {
+  //     name: 'Home'
+  //   },
+  //   {
+  //     name: 'About'
+  //   },
+  //   {
+  //     name: 'Portfolio'
+  //   },
+  //   {
+  //     name: 'Contact'
+  //   }
+  // ])
+
+  const [navLinks] = useState(
+    [
+      'Home',
+      'About',
+      'Portfolio',
+      'Contact'
+    ]
+  )
+
+  const [currentLink, setCurrentLink] = useState(navLinks[0]);
   const [contactSelected, setContactSelected] = useState(false);
+
   return (
     <main>
       <Nav 
@@ -32,14 +44,13 @@ function App() {
         setContactSelected={setContactSelected}
       />
       {
-        !contactSelected
-          ? (
-            <>
-              <Portfolio />
-            </>
-          ) : (
-            <ContactForm />
-          )
+        currentLink === 'Home' && !contactSelected
+          ? (<Home />)
+          : currentLink === 'Portfolio' && !contactSelected
+            ? (<Portfolio />)
+            : currentLink === 'Contact' && contactSelected
+              ? (<ContactForm />)
+              : false
       }
     </main>
   );

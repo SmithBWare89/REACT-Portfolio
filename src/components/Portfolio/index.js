@@ -35,8 +35,7 @@ export default function Portfolio() {
                         <Container>
                                 <h4>Summary</h4>
                                 <p>
-                                    Drinkology was created to allow end users to look up cocktail recipes, and master the art of mixology in the comfort of their own home. 
-                                    Members are able to sign in,save receipes to their account and leave reviews.
+Drinkology was created to allow end users to look up cocktail recipes, and master the art of mixology in the comfort of their own home. Members are able to sign in,save receipes to their account and leave reviews.
                                 </p>
                                 <h4>Languages Used</h4>
                                 <List.List as='ul'>

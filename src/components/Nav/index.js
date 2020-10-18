@@ -82,24 +82,24 @@ export default function Nav(props) {
             </Menu.Item>
             {/* Map over nav link names and create them */}
             {navLinks.map((link) => {
-                const {name} = link
+                console.log(link)
                 return <Menu.Item
-                    name={name}
-                    active={menuState === name}
+                    name={link}
+                    active={menuState === link}
                     onClick={handleMenuClick}
                     className={
-                        name === 'Contact'
-                            ? `${currentLink === name && setContactSelected(true) && 'navActive'}`
-                            : `${currentLink === name && !contactSelected && 'navActive'}`
+                        link === 'Contact'
+                            ? `${currentLink === link && setContactSelected(true) && 'navActive'}`
+                            : `${currentLink === link && !contactSelected && 'navActive'}`
                     }
-                    key={link.name}
+                    key={link}
                  >
                     <span
                         onClick={() => {
-                            setCurrentLink(link.name);
+                            setCurrentLink(link);
                         }}
                     >
-                        {link.name}
+                        {link}
                     </span>
                 </Menu.Item>
             })}

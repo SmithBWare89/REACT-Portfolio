@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "name": "Drinkology",
+        "altName": "drinkology",
+        "image": "./src/images/drinkology.png",
+        "summary": "Drinkology was created to allow end users to look up cocktail recipes, and master the art of mixology in the comfort of their own home. Members are able to sign in,save recipes to their account and leave reviews.",
+        "languages": ["Node", "Express", "Handlebars", "Bootstrap", "HTML", "Javascript", "CSS"],
+        "collaborators": [
+            {
+                "name": "Kristen Mayorga",
+                "repository": "https://github.com/Mayorgak"
+            },
+            {
+                "name": "Leo Ayala",
+                "repository": "https://github.com/leo-ayala"
+            }
+        ],
+        "repository": "https://github.com/Mayorgak/drinkology",
+        "deployed": "https://damp-peak-42313.herokuapp.com/",
+        "stateVar": "drinkologyOpen",
+        "setClose": "setDrinkologyOpen(false)",
+        "setOpen": "setDrinkologyOpen(true)"
+    }
+]
