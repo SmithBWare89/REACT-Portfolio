@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8c33bc69aa8f289e50a051639d21790",
+    "revision": "ea9a25df454e46e1d97d9cc41870660f",
     "url": "/REACT-portfolio/index.html"
   },
   {
-    "revision": "72f1ca286b02dd84b614",
+    "revision": "2224ba0a166089ae17bb",
     "url": "/REACT-portfolio/static/css/2.72381884.chunk.css"
   },
   {
-    "revision": "90f9ac3b48f8ca10b0c6",
+    "revision": "9289eca58a0e62f8c9af",
     "url": "/REACT-portfolio/static/css/main.400b2460.chunk.css"
   },
   {
-    "revision": "72f1ca286b02dd84b614",
-    "url": "/REACT-portfolio/static/js/2.9524d151.chunk.js"
+    "revision": "2224ba0a166089ae17bb",
+    "url": "/REACT-portfolio/static/js/2.33ff6de3.chunk.js"
   },
   {
     "revision": "1a1a42c150bd05496b97b265c552c789",
-    "url": "/REACT-portfolio/static/js/2.9524d151.chunk.js.LICENSE.txt"
+    "url": "/REACT-portfolio/static/js/2.33ff6de3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "90f9ac3b48f8ca10b0c6",
-    "url": "/REACT-portfolio/static/js/main.c130193c.chunk.js"
+    "revision": "9289eca58a0e62f8c9af",
+    "url": "/REACT-portfolio/static/js/main.8e8bb32e.chunk.js"
   },
   {
     "revision": "a65105b066a40284b1c4",
     "url": "/REACT-portfolio/static/js/runtime-main.ef72c244.js"
+  },
+  {
+    "revision": "17a7c6b1d81561fca44a417903c34a18",
+    "url": "/REACT-portfolio/static/media/Drinkology.17a7c6b1.PNG"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
