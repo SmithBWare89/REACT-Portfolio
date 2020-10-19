@@ -82,7 +82,6 @@ export default function Nav(props) {
             </Menu.Item>
             {/* Map over nav link names and create them */}
             {navLinks.map((link) => {
-                console.log(link)
                 return <Menu.Item
                     name={link}
                     active={menuState === link}

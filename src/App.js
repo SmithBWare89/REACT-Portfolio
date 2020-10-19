@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import 'semantic-ui-css/semantic.min.css';
 import Nav from './components/Nav';
-import ContactForm from './components/Contact';
-import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio/';
 import Home from './components/Home';
+import About from './components/About';
 import './App.css';
 
 function App() {
@@ -45,12 +46,12 @@ function App() {
       />
       {
         currentLink === 'Home' && !contactSelected
-          ? (<Home />)
-          : currentLink === 'Portfolio' && !contactSelected
-            ? (<Portfolio />)
-            : currentLink === 'Contact' && contactSelected
-              ? (<ContactForm />)
-              : false
+          ? <Home />
+          : currentLink === 'About' && !contactSelected
+            ? <About />
+            : currentLink === 'Portfolio' && !contactSelected
+              ? <Portfolio />
+              : <Contact />
       }
     </main>
   );

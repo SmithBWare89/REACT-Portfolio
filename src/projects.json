@@ -1,10 +1,9 @@
-[
-    {
+{
+    "drinkology": {
         "id": 1,
-        "name": "Drinkology",
+        "header": "Drinkology",
         "altName": "drinkology",
-        "image": "./src/images/drinkology.png",
-        "summary": "Drinkology was created to allow end users to look up cocktail recipes, and master the art of mixology in the comfort of their own home. Members are able to sign in,save recipes to their account and leave reviews.",
+        "description": "Drinkology was created to allow end users to look up cocktail recipes, and master the art of mixology in the comfort of their own home. Members are able to sign in,save recipes to their account and leave reviews.",
         "languages": ["Node", "Express", "Handlebars", "Bootstrap", "HTML", "Javascript", "CSS"],
         "collaborators": [
             {
@@ -17,9 +16,28 @@
             }
         ],
         "repository": "https://github.com/Mayorgak/drinkology",
-        "deployed": "https://damp-peak-42313.herokuapp.com/",
-        "stateVar": "drinkologyOpen",
-        "setClose": "setDrinkologyOpen(false)",
-        "setOpen": "setDrinkologyOpen(true)"
+        "deployed": "https://damp-peak-42313.herokuapp.com/"
+    },
+    "pwaBudget": {
+        "id": 2,
+        "header": "PWA Budget Tracker",
+        "altName": "pwaBudget",
+        "description": 
+            "This project is intended to be a demonstration of a progressive web application. It utilizes a service worker to register data caches in the browser to not only store files vital to the function of this app but also a snapshot of data so the user will be able to maintain an accurate budget when they're in low or no signal areas. Users will be to install this application on their desktop or on their mobile device from the browser."
+        ,
+        "languages": ["Node", "Express", "MongoDB", "HTML", "Javascript", "CSS"],
+        "repository": "https://github.com/SmithBWare89/progressive-app-budget-tracker#languages",
+        "deployed": "https://progressive-budget-tracker-app.herokuapp.com/"
+    },
+    "soShul": {
+        "id": 3,
+        "header": "So-Shul RESTful API",
+        "altName": "soShul",
+        "description": 
+            "This project is intended to be a demonstration of a RESTful API using a combination of MongoDB, Express, Mongoose, and Moment. It's been expanded to include a minimalist front end to allow for a web app representation of the data being created in our database. Further developments for this project would be to update the formatting of the project along with streamlining the API routes."
+        ,
+        "languages": ["Node", "Express", "MongoDB", "Mongoose", "Bcrypt", "HTML", "Javascript", "CSS"],
+        "repository": "https://github.com/SmithBWare89/so-shul-api",
+        "deployed": "https://so-shul.herokuapp.com/"
     }
-]
+}

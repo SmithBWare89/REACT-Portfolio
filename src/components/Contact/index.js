@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import '../../App.css';
-import { Form } from 'semantic-ui-react';
+import { Form, Container } from 'semantic-ui-react';
 const { Group, Input, TextArea, Button, Field } = Form;
 
-export default function ContactForm() {
+export default function Contact() {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     const [formState, setFormState] = useState({
@@ -12,6 +12,7 @@ export default function ContactForm() {
         email: '',
         message: ''
     });
+
     const {
         firstName,
         lastName,
@@ -52,61 +53,61 @@ export default function ContactForm() {
     }
 
     return (
-        <section id="contactForm">
-            <h1>Contact Me</h1>
+        <Container>
+            <h1 id="contact-header">Contact Me</h1>
             <Form>
-            <Group widths='equal'>
+                <Group widths='equal'>
+                    <Field
+                        id='first-name'
+                        control={Input}
+                        label='First Name'
+                        placeholder='First name'
+                        name='firstName'
+                        defaultValue={firstName}
+                        onBlur={handleChange}
+                    />
+                    <Field
+                        id='last-name'
+                        control={Input}
+                        label='Last Name'
+                        name='lastName'
+                        placeholder='Last name'
+                        defaultValue={lastName}
+                        onBlur={handleChange}
+                    />
+                </Group>
                 <Field
-                    id='first-name'
-                    control={Input}
-                    label='First Name'
-                    placeholder='First name'
-                    name='firstName'
-                    defaultValue={firstName}
+                    id='message'
+                    control={TextArea}
+                    label='Message'
+                    name='message'
+                    placeholder='Message'
+                    defaultValue={message}
                     onBlur={handleChange}
                 />
                 <Field
-                    id='last-name'
+                    id='error-email'
                     control={Input}
-                    label='Last Name'
-                    name='lastName'
-                    placeholder='Last name'
-                    defaultValue={lastName}
+                    label='Email'
+                    name='email'
+                    placeholder='joe@schmoe.com'
+                    defaultValue={email}
                     onBlur={handleChange}
                 />
-            </Group>
-            <Field
-                id='message'
-                control={TextArea}
-                label='Message'
-                name='message'
-                placeholder='Message'
-                defaultValue={message}
-                onBlur={handleChange}
-            />
-            <Field
-                id='error-email'
-                control={Input}
-                label='Email'
-                name='email'
-                placeholder='joe@schmoe.com'
-                defaultValue={email}
-                onBlur={handleChange}
-            />
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
+                {errorMessage && (
+                    <div>
+                        <p className="error-text">{errorMessage}</p>
+                    </div>
 
-            )}
+                )}
 
-            <Field
-                id='form-button-control-public'
-                control={Button}
-                content='Confirm'
-                label='Submit'
-            />
-        </Form>
-        </section>
+                <Field
+                    id='form-button-control-public'
+                    control={Button}
+                    content='Confirm'
+                    label='Submit'
+                />
+            </Form>
+        </Container>
     )
 }

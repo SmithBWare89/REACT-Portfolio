@@ -10,22 +10,48 @@ body {
   background-color: var(--smoky);
 }
 
+/* Nav Style Start */
 .ui.inverted.menu .active.item {
   background-color: var(--orange) !important;
 }
+/* Nav Style End */
 
-#contactForm {
-  display: grid !important;
-  place-items: center !important;
-  color: var(--white) !important;
+/* Portfolio Card Start*/
+.ui.card>.content p, .ui.cards>.card>.content p {
+  margin-top: 5px;
+  color: var(--white);
+  font-weight: 2.5em;
 }
 
-#contactForm label {
-  color: var(--white) !important;
-  font-size: 20px !important;
+.ui.card>.content>.header, .ui.cards>.card>.content>.header {
+  color: var(--carolina);
+  font-size: 1.5em !important;
+}
+
+.ui.card .meta p {
+  color: var(--orange) !important;
+}
+
+.ui.card, .ui.cards>.card {
+  background-color: var(--blueblack);
+  box-shadow: 0 1px 3px 0 var(--carolina), 0 0 0 1px var(--carolina);
+}
+/* Portfolio Card End */
+
+/* Contact Form Style Start*/
+.ui.form .field>label {
+  color: var(--carolina);
+  font-size: 2em;
 }
 
 .error-text {
   color: var(--orange);
   font-size: 2em;
 }
+
+#contact-header{
+  color: var(--white);
+  font-size: 6em;
+  text-align: center;
+}
+/* Contact Form Style End */
