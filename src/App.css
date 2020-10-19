@@ -62,7 +62,12 @@ body {
 /* About Me Start */
 .ui.message:last-child {
   background-color: var(--blueblack);
-  color: var(--white);
-  font-weight: lighter ;
+}
+
+.ui.message p {
+  color: var(--white) !important;
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 1.070rem;
 }
 /* About Me End */
