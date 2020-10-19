@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/REACT-portfolio/static/css/main.400b2460.chunk.css",
-    "main.js": "/REACT-portfolio/static/js/main.99b1599e.chunk.js",
-    "main.js.map": "/REACT-portfolio/static/js/main.99b1599e.chunk.js.map",
-    "runtime-main.js": "/REACT-portfolio/static/js/runtime-main.ef72c244.js",
-    "runtime-main.js.map": "/REACT-portfolio/static/js/runtime-main.ef72c244.js.map",
-    "static/css/2.72381884.chunk.css": "/REACT-portfolio/static/css/2.72381884.chunk.css",
-    "static/js/2.bac4ac30.chunk.js": "/REACT-portfolio/static/js/2.bac4ac30.chunk.js",
-    "static/js/2.bac4ac30.chunk.js.map": "/REACT-portfolio/static/js/2.bac4ac30.chunk.js.map",
-    "index.html": "/REACT-portfolio/index.html",
-    "precache-manifest.29feab417a5ed95aa731415272fdbe41.js": "/REACT-portfolio/precache-manifest.29feab417a5ed95aa731415272fdbe41.js",
-    "service-worker.js": "/REACT-portfolio/service-worker.js",
-    "static/css/2.72381884.chunk.css.map": "/REACT-portfolio/static/css/2.72381884.chunk.css.map",
-    "static/css/main.400b2460.chunk.css.map": "/REACT-portfolio/static/css/main.400b2460.chunk.css.map",
-    "static/js/2.bac4ac30.chunk.js.LICENSE.txt": "/REACT-portfolio/static/js/2.bac4ac30.chunk.js.LICENSE.txt",
-    "static/media/Drinkology.PNG": "/REACT-portfolio/static/media/Drinkology.17a7c6b1.PNG",
-    "static/media/semantic.min.css": "/REACT-portfolio/static/media/outline-icons.ef60a4f6.woff",
-    "static/media/pwa-budget.png": "/REACT-portfolio/static/media/pwa-budget.234fc5c7.png"
+    "main.css": "/REACT-Portfolio/static/css/main.997db587.chunk.css",
+    "main.js": "/REACT-Portfolio/static/js/main.c3d14fba.chunk.js",
+    "main.js.map": "/REACT-Portfolio/static/js/main.c3d14fba.chunk.js.map",
+    "runtime-main.js": "/REACT-Portfolio/static/js/runtime-main.32c222b1.js",
+    "runtime-main.js.map": "/REACT-Portfolio/static/js/runtime-main.32c222b1.js.map",
+    "static/css/2.92ba05b0.chunk.css": "/REACT-Portfolio/static/css/2.92ba05b0.chunk.css",
+    "static/js/2.8c49b6e7.chunk.js": "/REACT-Portfolio/static/js/2.8c49b6e7.chunk.js",
+    "static/js/2.8c49b6e7.chunk.js.map": "/REACT-Portfolio/static/js/2.8c49b6e7.chunk.js.map",
+    "index.html": "/REACT-Portfolio/index.html",
+    "precache-manifest.f70ac843ebf0500fa8dcef2a0ab3f6f9.js": "/REACT-Portfolio/precache-manifest.f70ac843ebf0500fa8dcef2a0ab3f6f9.js",
+    "service-worker.js": "/REACT-Portfolio/service-worker.js",
+    "static/css/2.92ba05b0.chunk.css.map": "/REACT-Portfolio/static/css/2.92ba05b0.chunk.css.map",
+    "static/css/main.997db587.chunk.css.map": "/REACT-Portfolio/static/css/main.997db587.chunk.css.map",
+    "static/js/2.8c49b6e7.chunk.js.LICENSE.txt": "/REACT-Portfolio/static/js/2.8c49b6e7.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/REACT-Portfolio/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/drinkology.png": "/REACT-Portfolio/static/media/drinkology.17a7c6b1.png",
+    "static/media/homepage.jpg": "/REACT-Portfolio/static/media/homepage.607751d6.jpg",
+    "static/media/pwaBudget.png": "/REACT-Portfolio/static/media/pwaBudget.234fc5c7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef72c244.js",
-    "static/css/2.72381884.chunk.css",
-    "static/js/2.bac4ac30.chunk.js",
-    "static/css/main.400b2460.chunk.css",
-    "static/js/main.99b1599e.chunk.js"
+    "static/js/runtime-main.32c222b1.js",
+    "static/css/2.92ba05b0.chunk.css",
+    "static/js/2.8c49b6e7.chunk.js",
+    "static/css/main.997db587.chunk.css",
+    "static/js/main.c3d14fba.chunk.js"
   ]
 }
