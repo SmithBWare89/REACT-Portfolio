@@ -5,8 +5,8 @@ import profileImage from '../../images/profile.jpg'
 
 export default function Home() {
     const messageStyle = {
-        color: '#f7f7ff', 
-        fontSize: '1.1em'
+        color: '#f7f7ff !important', 
+        fontSize: '1.1em !important'
     }
     return (
         <>
