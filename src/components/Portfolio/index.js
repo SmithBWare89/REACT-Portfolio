@@ -9,11 +9,6 @@ export default function Portfolio() {
         pwaBudget,
         soShul
     } = projects
-    
-    const imageStyles = {
-        height: '400px',
-        width: '800px'
-    }
 
     const h3Style = {
         color: '#fc5130',
@@ -49,10 +44,10 @@ export default function Portfolio() {
             <Carousel activeIndex={index} onSelect={handleSelect}>
                     <Carousel.Item>
                         <img
-                            className="d-block w-100"
+                            className="d-block"
                             src={require(`../../assets/images/${drinkology.altName}.png`)}
                             alt="First slide"
-                            style={imageStyles}
+                            // style={imageStyles}
                         />
                         <Carousel.Caption>
                             <h3 style={h3Style}>{drinkology.header}</h3>
@@ -64,10 +59,10 @@ export default function Portfolio() {
                     </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block"
                         src={require(`../../assets/images/${pwaBudget.altName}.png`)}
                         alt="Third slide"
-                        style={imageStyles}
+                        // style={imageStyles}
                     />
 
                     <Carousel.Caption>
@@ -79,10 +74,10 @@ export default function Portfolio() {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100"
+                        className="d-block"
                         src={require(`../../assets/images/${soShul.altName}.png`)}
                         alt="Third slide"
-                        style={imageStyles}
+                        // style={imageStyles}
                     />
 
                     <Carousel.Caption>

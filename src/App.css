@@ -54,6 +54,11 @@ body {
 .carousel-caption {
   text-align: left;
 }
+
+.carousel-item img {
+  height: 400px;
+  width: 100%;
+}
 /* Portfolio End */
 
 /* Contact Form Style Start*/
@@ -87,3 +92,28 @@ body {
   font-size: 1.070rem;
 }
 /* About Me End */
+
+
+
+/*
+Media Queries
+*/
+
+@media screen and (max-width: 980px) {
+  .ui.column.grid>[class*="seven wide"].column, .ui.grid>.column.row>[class*="seven wide"].column, .ui.grid>.row>[class*="seven wide"].column, .ui.grid>[class*="seven wide"].column {
+    width: 58%!important;
+  }
+
+  .ui.message p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 300px!important;
+    width: 100%!important;
+  }
+}
+@media screen and (max-width: 575px) {
+
+}

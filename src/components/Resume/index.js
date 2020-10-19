@@ -44,7 +44,13 @@ export default function Resume() {
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Magnifier src={image} />
+                    <Magnifier 
+                        src={image}
+                        zoomFactor={0.8}
+                        mgShape='square'
+                        mgHeight={300}
+                        mgWidth={400}
+                    />
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
