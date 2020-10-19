@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Image, Container, Message } from 'semantic-ui-react';
-import homepageImage from '../../images/homepage.jpg';
-import profileImage from '../../images/profile.jpg'
+import homepageImage from '../../assets/images/homepage.jpg';
+import profileImage from '../../assets/images/profile.jpg'
 
 export default function Home() {
     const messageStyle = {
@@ -22,7 +22,7 @@ export default function Home() {
                         I can remember coding websites made out of pure HTML when I was as young as 11 years old. I was (and still am) obsessed with
                         technology and building websites on a popular platform like Geocities was a favorite past time of mine.</p>
 
-                        <p>Like a tale as old as time I grew older and less involved with the tech community as other interests took their hold.
+                        <p>Like a tale as old as time; I grew older and less involved with the tech community as other interests took their hold.
                         Interests that took me to London, England for an entire school year to study abroad and learn how to properly become a professional wrestler.
                         Don't rub your eyes or think you saw that incorrectly. I <em ><span style={{color: '#fc5130', fontWeight: '700'}}>was</span></em> a professional wrestler.
                         For 10+ years I've traveled traveled the continental United States and abroad in spandex, patent leather boots, and stripes in my bid to work where I do now -- as a

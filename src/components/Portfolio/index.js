@@ -50,7 +50,7 @@ export default function Portfolio() {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src={require(`../../images/${drinkology.altName}.png`)}
+                            src={require(`../../assets/images/${drinkology.altName}.png`)}
                             alt="First slide"
                             style={imageStyles}
                         />
@@ -65,7 +65,7 @@ export default function Portfolio() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={require(`../../images/${pwaBudget.altName}.png`)}
+                        src={require(`../../assets/images/${pwaBudget.altName}.png`)}
                         alt="Third slide"
                         style={imageStyles}
                     />
@@ -80,7 +80,7 @@ export default function Portfolio() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={require(`../../images/${soShul.altName}.png`)}
+                        src={require(`../../assets/images/${soShul.altName}.png`)}
                         alt="Third slide"
                         style={imageStyles}
                     />

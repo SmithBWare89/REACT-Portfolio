@@ -104,7 +104,7 @@ export default function Contact() {
                 <Field
                     id='form-button-control-public'
                     control={Button}
-                    content='Confirm'
+                    content='Submit'
                     label='Submit'
                 />
             </Form>

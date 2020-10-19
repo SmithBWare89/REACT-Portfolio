@@ -6,6 +6,8 @@
   --smoky: #131112;
 }
 
+* {box-sizing: border-box;}
+
 body {
   background-color: var(--smoky);
 }
@@ -15,6 +17,19 @@ body {
   background-color: var(--orange) !important;
 }
 /* Nav Style End */
+
+/* Resume Style Start */
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+/* Resume Style End */
 
 /* Portfolio Start*/
 /* .ui.card>.content p, .ui.cards>.card>.content p {
@@ -45,6 +60,7 @@ body {
 .ui.form .field>label {
   color: var(--carolina);
   font-size: 2em;
+  margin-bottom:10px !important;
 }
 
 .error-text {
