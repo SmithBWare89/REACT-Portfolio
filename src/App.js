@@ -3,14 +3,14 @@ import 'semantic-ui-css/semantic.min.css';
 import Nav from './components/Nav';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio/';
-import Home from './components/Home';
+import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import './App.css';
 
 function App() {
   const [navLinks] = useState(
     [
-      'Home',
+      'About Me',
       'Resume',
       'Portfolio',
       'Contact'
@@ -30,8 +30,8 @@ function App() {
         setContactSelected={setContactSelected}
       />
       {
-        currentLink === 'Home' && !contactSelected
-          ? <Home />
+        currentLink === 'About Me' && !contactSelected
+          ? <AboutMe />
           : currentLink === 'Resume' && !contactSelected
             ? <Resume />
             : currentLink === 'Portfolio' && !contactSelected

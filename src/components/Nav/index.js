@@ -26,7 +26,7 @@ export default function Nav(props) {
         'bounce'
     ];
 
-    const [menuState, setMenuState] = useState('Home');
+    const [menuState, setMenuState] = useState('About Me');
     function handleMenuClick(e, { name }) {
         setMenuState(name);
         setContactSelected(false);
