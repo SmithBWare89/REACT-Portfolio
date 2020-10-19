@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import Portfolio from './components/Portfolio/';
 import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
               ? <Portfolio />
               : <Contact />
       }
+      <Footer />
     </main>
   );
 }

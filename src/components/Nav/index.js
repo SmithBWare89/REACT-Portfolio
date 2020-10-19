@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, Segment, Transition } from 'semantic-ui-react';
-import '../../App.css'
 
 export default function Nav(props) {
     const {
