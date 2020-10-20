@@ -135,11 +135,23 @@ Media Queries
 
 @media screen and (max-width: 980px) {
   .ui.column.grid>[class*="seven wide"].column, .ui.grid>.column.row>[class*="seven wide"].column, .ui.grid>.row>[class*="seven wide"].column, .ui.grid>[class*="seven wide"].column {
-    width: 58%!important;
+    width: 100%!important;
+  }
+
+  .ui.column.grid>[class*="nine wide"].column, .ui.grid>.column.row>[class*="nine wide"].column, .ui.grid>.row>[class*="nine wide"].column, .ui.grid>[class*="nine wide"].column {
+    width: 100% !important;
   }
 
   .ui.message p {
     font-size: 16px;
+  }
+
+  .ui.secondary.inverted.pointing.menu {
+    font-size: 14px;
+  }
+
+  .fa-3x {
+   font-size: 2em; 
   }
 }
 @media screen and (max-width: 768px) {
@@ -149,5 +161,7 @@ Media Queries
   }
 }
 @media screen and (max-width: 575px) {
-
+  .ui.secondary.inverted.pointing.menu {
+    font-size: 10px;
+  }
 }
