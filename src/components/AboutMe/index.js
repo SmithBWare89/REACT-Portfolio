@@ -30,7 +30,7 @@ export default function AboutMe() {
                         <p>How does that fit into my developer story? Preparation. My journey has prepared me by teaching me how to be flexible, have an eye for detail, and how to
                         push myself to develop the best experience for not only you but for the paying customer. I feel that a combination of my skills learned throughout my journey in
                         wrestling and those learned throughout my bootcamp experience will make you and me the PERFECT tag team.</p>
-                        <p>So what do you say tag partner? Tag me in?</p>
+                        <p>So what do you say partner? Tag me in?</p>
                     </Message>
                 </Grid.Column>
             </Grid>
