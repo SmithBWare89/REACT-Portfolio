@@ -1,0 +1,54 @@
+{
+    "drinkology": {
+        "id": 1,
+        "header": "Drinkology",
+        "altName": "drinkology",
+        "description": "Drinkology was created to allow end users to look up cocktail recipes, and master the art of mixology in the comfort of their own home. Members are able to sign in,save recipes to their account and leave reviews.",
+        "languages": ["Node", "Express", "Handlebars", "Bootstrap", "HTML", "Javascript", "CSS"],
+        "collaborators": [
+            {
+                "name": "Kristen Mayorga",
+                "repository": "https://github.com/Mayorgak"
+            },
+            {
+                "name": "Leo Ayala",
+                "repository": "https://github.com/leo-ayala"
+            }
+        ],
+        "repository": "https://github.com/Mayorgak/drinkology",
+        "deployed": "https://damp-peak-42313.herokuapp.com/"
+    },
+    "pwaBudget": {
+        "id": 2,
+        "header": "PWA Budget Tracker",
+        "altName": "pwaBudget",
+        "description": 
+            "This project is intended to be a demonstration of a progressive web application. It utilizes a service worker to register data caches in the browser to not only store files vital to the function of this app but also a snapshot of data so the user will be able to maintain an accurate budget when they're in low or no signal areas. Users will be to install this application on their desktop or on their mobile device from the browser."
+        ,
+        "languages": ["Node", "Express", "MongoDB", "HTML", "Javascript", "CSS"],
+        "repository": "https://github.com/SmithBWare89/progressive-app-budget-tracker#languages",
+        "deployed": "https://progressive-budget-tracker-app.herokuapp.com/"
+    },
+    "soShul": {
+        "id": 3,
+        "header": "So-Shul RESTful API",
+        "altName": "soShul",
+        "description": 
+            "This project is intended to be a demonstration of a RESTful API using a combination of MongoDB, Express, Mongoose, and Moment. It's been expanded to include a minimalist front end to allow for a web app representation of the data being created in our database. Further developments for this project would be to update the formatting of the project along with streamlining the API routes."
+        ,
+        "languages": ["Node", "Express", "MongoDB", "Mongoose", "Bcrypt", "HTML", "Javascript", "CSS"],
+        "repository": "https://github.com/SmithBWare89/so-shul-api",
+        "deployed": "https://so-shul.herokuapp.com/"
+    },
+    "ollieWilliamsWeather": {
+        "id": 4,
+        "header": "Server-Side API Weather Dashboard (Mobile Responsive)",
+        "altName": "ollieWilliams",
+        "description": 
+            "This project was intended to utilize both web and server-side APIs to leverage data retrieval and persistence for a mobile responsive application. Information is called from the OpenWeather API using the user inputted city which then dynamically renders the current weather forecast as well as the 5-day forecast for that city. Information persists in localStorage which allows the user to quickly recall previously searched cities."
+        ,
+        "languages": ["HTML", "Bootstrap", "HTML", "Javascript", "CSS"],
+        "repository": "https://github.com/SmithBWare89/ollie-williams-weather",
+        "deployed": "https://smithbware89.github.io/ollie-williams-weather/"
+    }
+}

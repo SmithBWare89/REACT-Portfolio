@@ -1,38 +1,167 @@
-.App {
+:root {
+  --white: #f7f7ff;
+  --orange: #fc5130;
+  --carolina: #279af1;
+  --blueblack: #001427;
+  --smoky: #131112;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  background-color: var(--smoky);
+}
+
+/* Nav Style Start */
+.ui.inverted.menu .active.item {
+  background-color: var(--orange) !important;
+}
+
+.ui.inverted.segment {
+  margin: 0px 0px 10px 0px;
+  position: sticky;
+  border-bottom: 2px solid var(--orange);
+}
+
+.ui.secondary.inverted.pointing.menu {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+/* Nav Style End */
+
+/* Resume Style Start */
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
+/* Resume Style End */
+
+/* Portfolio Start*/
+/* .ui.card>.content p, .ui.cards>.card>.content p {
+  margin-top: 5px;
+  color: var(--white);
+  font-weight: 2.5em;
+}
+
+.ui.card>.content>.header, .ui.cards>.card>.content>.header {
+  color: var(--carolina);
+  font-size: 1.5em !important;
+}
+
+.ui.card .meta p {
+  color: var(--orange) !important;
+}
+
+.ui.card, .ui.cards>.card {
+  background-color: var(--blueblack);
+  box-shadow: 0 1px 3px 0 var(--carolina), 0 0 0 1px var(--carolina);
+} */
+.carousel-caption {
+  text-align: left;
+}
+
+.carousel-item img {
+  height: 400px;
+  width: 100%;
+}
+/* Portfolio End */
+
+/* Contact Form Style Start*/
+.ui.form .field>label {
+  color: var(--carolina);
+  font-size: 2em;
+  margin-bottom:10px !important;
+}
+
+.error-text {
+  color: var(--orange);
+  font-size: 2em;
+}
+
+#contact-header{
+  color: var(--white);
+  font-size: 6em;
   text-align: center;
 }
+/* Contact Form Style End */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* About Me Start */
+.ui.message:last-child {
+  background-color: var(--blueblack);
+  border: 2px solid var(--carolina);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.ui.message p {
+  color: var(--white) !important;
+  opacity: 0.9;
+  font-weight: 500;
+  font-size: 1.070rem;
+}
+/* About Me End */
+
+/* Footer Style Start */
+  #footer-container {
+    background-color: var(--blueblack);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 75px;
+    width: 100% !important;
+    border-top: 2px solid var(--orange);
+  }
+
+  .fa-github:before, .fa-stack-overflow:before, .fa-linkedin:before {
+    color: var(--white);
+  }
+
+  #github, #stack-overflow, #linked-in {
+    margin-top: 15px;
+  }
+/* Footer Style End */
+
+
+/*
+Media Queries
+*/
+
+@media screen and (max-width: 980px) {
+  .ui.column.grid>[class*="seven wide"].column, .ui.grid>.column.row>[class*="seven wide"].column, .ui.grid>.row>[class*="seven wide"].column, .ui.grid>[class*="seven wide"].column {
+    width: 100%!important;
+  }
+
+  .ui.column.grid>[class*="nine wide"].column, .ui.grid>.column.row>[class*="nine wide"].column, .ui.grid>.row>[class*="nine wide"].column, .ui.grid>[class*="nine wide"].column {
+    width: 100% !important;
+  }
+
+  .ui.message p {
+    font-size: 16px;
+  }
+
+  .ui.secondary.inverted.pointing.menu {
+    font-size: 14px;
+  }
+
+  .fa-3x {
+   font-size: 2em; 
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 300px!important;
+    width: 100%!important;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 575px) {
+  .ui.secondary.inverted.pointing.menu {
+    font-size: 10px;
   }
 }

@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import 'semantic-ui-css/semantic.min.css';
+import Nav from './components/Nav';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio/';
+import AboutMe from './components/AboutMe';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+  const [navLinks] = useState(
+    [
+      'About Me',
+      'Resume',
+      'Portfolio',
+      'Contact'
+    ]
+  )
+
+  const [currentLink, setCurrentLink] = useState(navLinks[0]);
+  const [contactSelected, setContactSelected] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Nav 
+        navLinks={navLinks}
+        setCurrentLink={setCurrentLink}
+        currentLink={currentLink}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      />
+      {
+        currentLink === 'About Me' && !contactSelected
+          ? <AboutMe />
+          : currentLink === 'Resume' && !contactSelected
+            ? <Resume />
+            : currentLink === 'Portfolio' && !contactSelected
+              ? <Portfolio />
+              : <Contact />
+      }
+      <Footer />
+    </main>
   );
 }
 
