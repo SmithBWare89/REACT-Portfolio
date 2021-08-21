@@ -1,7 +1,7 @@
 {
     "drinkology": {
         "id": 1,
-        "header": "Drinkology",
+        "header": "Drinkology - Full Stack Project",
         "altName": "drinkology",
         "description": "Drinkology was created to allow end users to look up cocktail recipes, and master the art of mixology in the comfort of their own home. Members are able to sign in,save recipes to their account and leave reviews.",
         "languages": ["Node", "Express", "Handlebars", "Bootstrap", "HTML", "Javascript", "CSS"],
@@ -42,13 +42,40 @@
     },
     "ollieWilliamsWeather": {
         "id": 4,
-        "header": "Server-Side API Weather Dashboard (Mobile Responsive)",
+        "header": "Server-Side API - Weather Dashboard (Mobile Responsive)",
         "altName": "ollieWilliams",
         "description": 
             "This project was intended to utilize both web and server-side APIs to leverage data retrieval and persistence for a mobile responsive application. Information is called from the OpenWeather API using the user inputted city which then dynamically renders the current weather forecast as well as the 5-day forecast for that city. Information persists in localStorage which allows the user to quickly recall previously searched cities."
         ,
-        "languages": ["HTML", "Bootstrap", "HTML", "Javascript", "CSS"],
+        "languages": ["HTML", "Bootstrap", "Javascript", "CSS"],
         "repository": "https://github.com/SmithBWare89/ollie-williams-weather",
         "deployed": "https://smithbware89.github.io/ollie-williams-weather/"
+    },
+    "teamProfileGenerator": {
+        "id": 5,
+        "header": "Object-Oriented Programming - Team Profile Generator",
+        "altName": "teamProfile",
+        "description": "Utilized the Node package Inquirer and object-oriented programming best practices to create a command-line application that takes in information about employees on a software engineering team and then generates an HTML webpage to display a summary of each person within the organization.",
+        "languages": ["HTML", "Javascript", "CSS", "Node"],
+        "repository": "https://github.com/SmithBWare89/team-profile-manager",
+        "deployed": "https://github.com/SmithBWare89/team-profile-manager/blob/master/dist/sample-html.html"
+    },
+    "reduxECommerceStore": {
+        "id": 6,
+        "header": "Redux - eCommerce Refactor",
+        "altName": "eCommerceRefactor",
+        "description": "This project is intended to be a demonstration of refactoring a Context API to one that uses a Redux store. For this project we were provided starter code of an e-commerce side that we added state management to throughout the module. As students we were challenged with reading the Redux documentation to increase our understanding of another package that performs similar functionality while also increasing our exposure to how developers will have to parse through documentation they may be unfamiliar with to resolve an issue in development. It's intended that when reviewing the code behind this project that you'll find a refactored code document that uses Redux to handle state management for the web application.",
+        "languages": ["Javascript", "Node", "React-Redux", "Redux"],
+        "repository": "https://github.com/SmithBWare89/Redux-E-Commerce-Refactor",
+        "deployed": "https://redux-ecommerce-refactor.herokuapp.com/"
+    },
+    "scriptifyQuiz": {
+        "id": 7,
+        "header": "Web API - Scriptify Quiz",
+        "altName": "scriptifyQuiz",
+        "description": "This application is a coding challenge that's a part of the University of Central Florida's coding bootcamp. It's intended that this application will test my knowledge of Web API's as well as all information previously covered within this course. For this challenge I aim to create a website that generates a quiz on Javascript basics.",
+        "languages": ["HTML", "CSS", "Javascript"],
+        "repository": "https://github.com/SmithBWare89/scriptify-quizzes",
+        "deployed": "https://smithbware89.github.io/scriptify-quizzes/"
     }
 }
