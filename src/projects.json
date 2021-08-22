@@ -91,7 +91,7 @@
         "id": 9,
         "header": "Gist - Regex Tutorial",
         "altName": "regexTutorial",
-        "description": "Regular Expresions, or regex, are powerful and useful tools in web development and coding because the data that can be drawn from them can be used in multiple ways to enhance and simplify certain processes in regards to coding. The gist of this gist is to be able to break down what goes into the creation of a regex as well as identify how powerful this tool can be in capturing and validating the data we receive from users on the front end.",
+        "description": "Regular Expressions, or regex, are powerful and useful tools in web development and coding because the data that can be drawn from them can be used in multiple ways to enhance and simplify certain processes in regards to coding. The gist of this gist is to be able to break down what goes into the creation of a regex as well as identify how powerful this tool can be in capturing and validating the data we receive from users on the front end.",
         "languages": ["Regex", "Readme"],
         "repository": "https://gist.github.com/SmithBWare89/9d121b06ea35a89aa46a4426e4697dd9"
     }
