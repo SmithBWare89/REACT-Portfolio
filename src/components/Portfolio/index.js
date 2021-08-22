@@ -14,19 +14,6 @@ import readmeGeneratorImage from '../../assets/images/readmeGenerator.png';
 import regexGistImage from '../../assets/images/regexGist.png';
 
 export default function Portfolio() {
-    // Add projects from projects.json here
-    const projectImages = [
-        drinkologyImage,
-        ollieWilliamsImage,
-        pwaBudgetImage,
-        soShulImage,
-        teamProfileImage,
-        reduxECommerceStoreImage,
-        scriptifyQuizImage,
-        readmeGeneratorImage,
-        regexGistImage
-     ]
-
      const {
         drinkology,
         pwaBudget,
@@ -41,8 +28,6 @@ export default function Portfolio() {
 
     const [show, setShow] = useState(false);
     const [project, setProject] = useState('');
-    const [index, setIndex] = useState(0);
-
     const handleModalClose = () => setShow(false);
 
     const handleModalShow = (evt) => {
@@ -114,24 +99,6 @@ export default function Portfolio() {
         // setShow(true)
     };
 
-    const handleIndexSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-    };
-
-    const carouselStyle = {
-        position: 'relative'
-    }
-
-    const carouselCaption = {
-        fontSize: '50px',
-        color: 'var(--orange)',
-        textShadow: '10px 10px #001427 !important',
-        textAlign: 'left',
-        position: 'absolute',
-        left: '20px',
-        bottom: '5px'
-    }
-
     const imageStyle = {
         height: 'auto',
         maxHeight: '175px',
@@ -144,8 +111,8 @@ export default function Portfolio() {
     }
 
     return (
-        <Container>      
-            <Grid columns='two' divided doubling={true}>
+        <Container style={{ marginBottom: '100px !important' }}>      
+            <Grid columns='two' divided doubling={true} style={{ marginBottom: '100px !important' }}>
                 {/* Drinkology and Ollie Williams */}
                 <Grid.Row>
                     {/* Drinkology */}
@@ -311,6 +278,7 @@ export default function Portfolio() {
                 </Grid.Row>
             </Grid>
             
+            {/* Modal Code */}
             <>
                 {
                     project

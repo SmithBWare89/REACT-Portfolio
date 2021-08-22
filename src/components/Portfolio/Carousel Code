@@ -1,0 +1,142 @@
+const [index, setIndex] = useState(0);
+    const handleIndexSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+    };
+
+
+<Carousel activeIndex={index} onSelect={handleIndexSelect}>
+{/* First Slide - Drinkology */}
+<Carousel.Item style={carouselStyle}>
+    <img
+        className="carousal-image"
+        src={drinkologyImage}
+        alt="First slide"
+    />
+    <Carousel.Caption style={carouselCaption}>
+        <h3 className='carousel-header'>{drinkology.header}</h3>
+        <Button variant="primary" onClick={handleModalShow} name='drinkology'>
+            Show More Info
+        </Button>
+    </Carousel.Caption>
+</Carousel.Item>
+{/* Second Slide - pwaBudget */}
+<Carousel.Item style={carouselStyle}>
+    <img
+        className="carousal-image"
+        src={pwaBudgetImage}
+        alt="Third slide"
+    />
+
+    <Carousel.Caption style={carouselCaption}>
+        <h3 className='carousel-header'>{pwaBudget.header}</h3>
+        <Button variant="primary" onClick={handleModalShow} name='pwaBudget'>
+            Show More Info
+        </Button>
+    </Carousel.Caption>
+</Carousel.Item>
+{/* Third Slide - So-Shul Network */}
+<Carousel.Item style={carouselStyle}>
+    <img
+        className="d-block carousal-image"
+        src={soShulImage}
+        alt="Third slide"
+    />
+
+    <Carousel.Caption style={carouselCaption}>
+        <h3 className='carousel-header'>{soShul.header}</h3>
+        <Button variant="primary" onClick={handleModalShow} name='soShul'>
+            Show More Info
+        </Button>
+    </Carousel.Caption>
+</Carousel.Item>
+{/* Fourth Slide - Ollie Williams Weather */}
+<Carousel.Item style={carouselStyle}>
+    <img
+        className="d-block carousal-image"
+        src={ollieWilliamsImage}
+        alt="Fourth slide"
+    />
+
+    <Carousel.Caption style={carouselCaption}>
+        <h3 className='carousel-header'>{ollieWilliamsWeather.header}</h3>
+        <Button variant="primary" onClick={handleModalShow} name='ollieWilliamsWeather'>
+            Show More Info
+        </Button>
+    </Carousel.Caption>
+</Carousel.Item>
+{/* Fifth Slide - Team Profile Generator */}
+<Carousel.Item style={carouselStyle}>
+    <img
+        className="d-block carousal-image"
+        src={teamProfileImage}
+        alt="Fifth slide"
+    />
+
+    <Carousel.Caption style={carouselCaption}>
+        <h3 className='carousel-header'>{teamProfileGenerator.header}</h3>
+        <Button variant="primary" onClick={handleModalShow} name='teamProfileGenerator'>
+            Show More Info
+        </Button>
+    </Carousel.Caption>
+</Carousel.Item>
+{/* Sixth Slide - Redux eCommmerce Refactor */}
+<Carousel.Item style={carouselStyle}>
+    <img
+        className="d-block carousal-image"
+        src={reduxECommerceStoreImage}
+        alt="Sixth slide"
+    />
+
+    <Carousel.Caption style={carouselCaption}>
+        <h3 className='carousel-header'>{reduxECommerceStore.header}</h3>
+        <Button variant="primary" onClick={handleModalShow} name='reduxECommerceStore'>
+            Show More Info
+        </Button>
+    </Carousel.Caption>
+</Carousel.Item>
+{/* Seventh Slide - Scriptify Quiz */}
+<Carousel.Item style={carouselStyle}>
+    <img
+        className="d-block carousal-image"
+        src={scriptifyQuizImage}
+        alt="Seventh slide"
+    />
+
+    <Carousel.Caption style={carouselCaption}>
+        <h3 className='carousel-header'>{scriptifyQuiz.header}</h3>
+        <Button variant="primary" onClick={handleModalShow} name='scriptifyQuiz'>
+            Show More Info
+        </Button>
+    </Carousel.Caption>
+</Carousel.Item>
+{/* Eighth Slide - Readme Generator */}
+<Carousel.Item style={carouselStyle}>
+    <img
+        className="d-block carousal-image"
+        src={readmeGeneratorImage}
+        alt="Eighth slide"
+    />
+
+    <Carousel.Caption style={carouselCaption}>
+        <h3 className='carousel-header'>{readmeGenerator.header}</h3>
+        <Button variant="primary" onClick={handleModalShow} name='readmeGenerator'>
+            Show More Info
+        </Button>
+    </Carousel.Caption>
+</Carousel.Item>
+{/* Ninth Slide - Regex Gist */}
+<Carousel.Item style={carouselStyle}>
+    <img
+        className="d-block carousal-image"
+        src={regexGistImage}
+        alt="Ninth slide"
+    />
+
+    <Carousel.Caption style={carouselCaption}>
+        <h3 className='carousel-header'>{regexGist.header}</h3>
+        <Button variant="primary" onClick={handleModalShow} name='regexGist'>
+            Show More Info
+        </Button>
+    </Carousel.Caption>
+</Carousel.Item>
+</Carousel>

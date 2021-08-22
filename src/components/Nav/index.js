@@ -13,7 +13,8 @@ export default function Nav(props) {
     const styleOptions = {
         backgroundColor: '#001427',
         color: '#f7f7ff',
-        textAlign: 'center'
+        textAlign: 'center',
+        marginBottom: '30px'
     };
 
     const transitions = [
