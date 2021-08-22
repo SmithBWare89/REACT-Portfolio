@@ -31,12 +31,12 @@
     },
     "soShul": {
         "id": 3,
-        "header": "So-Shul RESTful API",
+        "header": "NoSQL & REST API - So-Shul Network",
         "altName": "soShul",
         "description": 
             "This project is intended to be a demonstration of a RESTful API using a combination of MongoDB, Express, Mongoose, and Moment. It's been expanded to include a minimalist front end to allow for a web app representation of the data being created in our database. Further developments for this project would be to update the formatting of the project along with streamlining the API routes."
         ,
-        "languages": ["Node", "Express", "MongoDB", "Mongoose", "Bcrypt", "HTML", "Javascript", "CSS"],
+        "languages": ["Node", "Express", "MongoDB", "Mongoose", "Bcrypt", "HTML", "Javascript", "CSS", "SQL", "NoSQL", "Handlebars"],
         "repository": "https://github.com/SmithBWare89/so-shul-api",
         "deployed": "https://so-shul.herokuapp.com/"
     },
@@ -77,5 +77,22 @@
         "languages": ["HTML", "CSS", "Javascript"],
         "repository": "https://github.com/SmithBWare89/scriptify-quizzes",
         "deployed": "https://smithbware89.github.io/scriptify-quizzes/"
+    },
+    "readmeGenerator": {
+        "id": 8,
+        "header": "Node - Professional Readme Generator",
+        "altName": "readmeGenerator",
+        "description": "This project is a part of the coursework for the University of Central Florida coding bootcamp. It's aimed at utilizing Node and javascript to be able to run a program using the command line. Users are asked a series of questions that are generated using the "Inquirer" package and then given the option to immediately view their generated readme. I hope that this will be able to assist individuals as well as myself in the future by making the creation of a professional readme simple, quick, and easy.",
+        "languages": ["Javascript", "Node"],
+        "repository": "https://github.com/SmithBWare89/readme-generator",
+        "deployed": "https://www.youtube.com/watch?v=JOvcEToevro"
+    },
+    "regexGist": {
+        "id": 9,
+        "header": "Gist - Regex Tutorial",
+        "altName": "regexTutorial",
+        "description": "Regular Expresions, or regex, are powerful and useful tools in web development and coding because the data that can be drawn from them can be used in multiple ways to enhance and simplify certain processes in regards to coding. The gist of this gist is to be able to break down what goes into the creation of a regex as well as identify how powerful this tool can be in capturing and validating the data we receive from users on the front end.",
+        "languages": ["Regex", "Readme"],
+        "repository": "https://gist.github.com/SmithBWare89/9d121b06ea35a89aa46a4426e4697dd9"
     }
 }
