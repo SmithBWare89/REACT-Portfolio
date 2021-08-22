@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel, Button, Modal } from 'react-bootstrap';
-import { Container, List, Image, Divider, Grid, Card } from 'semantic-ui-react';
+import { Container, List, Image, Header, Card, Item, Grid } from 'semantic-ui-react';
 
 import projects from '../../projects.json';
 import drinkologyImage from '../../assets/images/drinkology.png';
@@ -15,7 +15,19 @@ import regexGistImage from '../../assets/images/regexGist.png';
 
 export default function Portfolio() {
     // Add projects from projects.json here
-    const {
+    const projectImages = [
+        drinkologyImage,
+        ollieWilliamsImage,
+        pwaBudgetImage,
+        soShulImage,
+        teamProfileImage,
+        reduxECommerceStoreImage,
+        scriptifyQuizImage,
+        readmeGeneratorImage,
+        regexGistImage
+     ]
+
+     const {
         drinkology,
         pwaBudget,
         soShul,
@@ -26,12 +38,6 @@ export default function Portfolio() {
         readmeGenerator,
         regexGist
     } = projects
-
-    const h3Style = {
-        color: '#fc5130',
-        textShadow: '2px 2px #001427',
-        fontSize: '1em'
-    }
 
     const [show, setShow] = useState(false);
     const [project, setProject] = useState('');
@@ -126,144 +132,185 @@ export default function Portfolio() {
         bottom: '5px'
     }
 
+    const imageStyle = {
+        height: 'auto',
+        maxHeight: '175px',
+        width: 'auto',
+        maxWidth: '100%'
+    }
+
+    const populateLanguages = (languages) => {
+       return languages.toString().replaceAll(',', ', ');
+    }
+
     return (
-        <Container>
-            <Carousel activeIndex={index} onSelect={handleIndexSelect}>
-                {/* First Slide - Drinkology */}
-                <Carousel.Item style={carouselStyle}>
-                    <img
-                        className="carousal-image"
-                        src={drinkologyImage}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption style={carouselCaption}>
-                        <h3 className='carousel-header'>{drinkology.header}</h3>
-                        <Button variant="primary" onClick={handleModalShow} name='drinkology'>
-                            Show More Info
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                {/* Second Slide - pwaBudget */}
-                <Carousel.Item style={carouselStyle}>
-                    <img
-                        className="carousal-image"
-                        src={pwaBudgetImage}
-                        alt="Third slide"
-                    />
+        <Container>      
+            <Grid columns='two' divided doubling={true}>
+                {/* Drinkology and Ollie Williams */}
+                <Grid.Row>
+                    {/* Drinkology */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                        >
+                            <Image src={drinkologyImage} style={imageStyle} />
+                            <Card.Content>
+                                <Card.Header as='h1'>{drinkology.header}</Card.Header>
+                                <Card.Meta content={populateLanguages(drinkology.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button variant="primary" onClick={handleModalShow} name='drinkology'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                    {/* Ollie Williams Budget */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                        >
+                            <Image src={ollieWilliamsImage} style={imageStyle} />
+                            <Card.Content>
+                                <Card.Header as='h1'>{ollieWilliamsWeather.header}</Card.Header>
+                                <Card.Meta content={populateLanguages(ollieWilliamsWeather.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button variant="primary" onClick={handleModalShow} name='ollieWilliamsWeather'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
 
-                    <Carousel.Caption style={carouselCaption}>
-                        <h3 className='carousel-header'>{pwaBudget.header}</h3>
-                        <Button variant="primary" onClick={handleModalShow} name='pwaBudget'>
-                            Show More Info
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                {/* Third Slide - So-Shul Network */}
-                <Carousel.Item style={carouselStyle}>
-                    <img
-                        className="d-block carousal-image"
-                        src={soShulImage}
-                        alt="Third slide"
-                    />
+                {/* PWA Budget and So-Shul */}
+                <Grid.Row>
+                    {/* pwaBudget */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                        >
+                            <Image src={pwaBudgetImage} style={imageStyle} />
+                            <Card.Content>
+                                <Card.Header as='h1'>{pwaBudget.header}</Card.Header>
+                                <Card.Meta content={populateLanguages(pwaBudget.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button variant="primary" onClick={handleModalShow} name='pwaBudget'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                    {/* so-Shul Network Budget */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                        >
+                            <Image src={soShulImage} style={imageStyle, {margin: '18px'}} />
+                            <Card.Content>
+                                <Card.Header as='h1'>{soShul.header}</Card.Header>
+                                <Card.Meta content={populateLanguages(soShul.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button variant="primary" onClick={handleModalShow} name='soShul'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
 
-                    <Carousel.Caption style={carouselCaption}>
-                        <h3 className='carousel-header'>{soShul.header}</h3>
-                        <Button variant="primary" onClick={handleModalShow} name='soShul'>
-                            Show More Info
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                {/* Fourth Slide - Ollie Williams Weather */}
-                <Carousel.Item style={carouselStyle}>
-                    <img
-                        className="d-block carousal-image"
-                        src={ollieWilliamsImage}
-                        alt="Fourth slide"
-                    />
+                {/* Team Profile and Redux eCommerce */}
+                <Grid.Row>
+                    {/* Team Profile Generator */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                        >
+                            <Image src={teamProfileImage} style={imageStyle, {height: '175px'}} />
+                            <Card.Content>
+                                <Card.Header as='h1'>{teamProfileGenerator.header}</Card.Header>
+                                <Card.Meta content={populateLanguages(teamProfileGenerator.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button variant="primary" onClick={handleModalShow} name='teamProfileGenerator'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                    {/* eCommerce Redux */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                        >
+                            <Image src={reduxECommerceStoreImage} style={imageStyle} />
+                            <Card.Content>
+                                <Card.Header as='h1'>{reduxECommerceStore.header}</Card.Header>
+                                <Card.Meta content={populateLanguages(reduxECommerceStore.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button variant="primary" onClick={handleModalShow} name='reduxECommerceStore'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
+            
+                {/* Scriptify and Readme Generator */}
+                <Grid.Row>
+                    {/* Scriptify */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                        >
+                            <Image src={scriptifyQuizImage} style={imageStyle, {height: '175px'}} />
+                            <Card.Content>
+                                <Card.Header as='h1'>{scriptifyQuiz.header}</Card.Header>
+                                <Card.Meta content={populateLanguages(scriptifyQuiz.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button variant="primary" onClick={handleModalShow} name='scriptifyQuiz'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                    {/* Readme Generator */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                        >
+                            <Image src={readmeGeneratorImage} style={imageStyle, {height: '175px'}} />
+                            <Card.Content>
+                                <Card.Header as='h1'>{readmeGenerator.header}</Card.Header>
+                                <Card.Meta content={populateLanguages(readmeGenerator.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button variant="primary" onClick={handleModalShow} name='readmeGenerator'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
 
-                    <Carousel.Caption style={carouselCaption}>
-                        <h3 className='carousel-header'>{ollieWilliamsWeather.header}</h3>
-                        <Button variant="primary" onClick={handleModalShow} name='ollieWilliamsWeather'>
-                            Show More Info
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                {/* Fifth Slide - Team Profile Generator */}
-                <Carousel.Item style={carouselStyle}>
-                    <img
-                        className="d-block carousal-image"
-                        src={teamProfileImage}
-                        alt="Fifth slide"
-                    />
-
-                    <Carousel.Caption style={carouselCaption}>
-                        <h3 className='carousel-header'>{teamProfileGenerator.header}</h3>
-                        <Button variant="primary" onClick={handleModalShow} name='teamProfileGenerator'>
-                            Show More Info
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                {/* Sixth Slide - Redux eCommmerce Refactor */}
-                <Carousel.Item style={carouselStyle}>
-                    <img
-                        className="d-block carousal-image"
-                        src={reduxECommerceStoreImage}
-                        alt="Sixth slide"
-                    />
-
-                    <Carousel.Caption style={carouselCaption}>
-                        <h3 className='carousel-header'>{reduxECommerceStore.header}</h3>
-                        <Button variant="primary" onClick={handleModalShow} name='reduxECommerceStore'>
-                            Show More Info
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                {/* Seventh Slide - Scriptify Quiz */}
-                <Carousel.Item style={carouselStyle}>
-                    <img
-                        className="d-block carousal-image"
-                        src={scriptifyQuizImage}
-                        alt="Seventh slide"
-                    />
-
-                    <Carousel.Caption style={carouselCaption}>
-                        <h3 className='carousel-header'>{scriptifyQuiz.header}</h3>
-                        <Button variant="primary" onClick={handleModalShow} name='scriptifyQuiz'>
-                            Show More Info
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                {/* Eighth Slide - Readme Generator */}
-                <Carousel.Item style={carouselStyle}>
-                    <img
-                        className="d-block carousal-image"
-                        src={readmeGeneratorImage}
-                        alt="Eighth slide"
-                    />
-
-                    <Carousel.Caption style={carouselCaption}>
-                        <h3 className='carousel-header'>{readmeGenerator.header}</h3>
-                        <Button variant="primary" onClick={handleModalShow} name='readmeGenerator'>
-                            Show More Info
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                {/* Ninth Slide - Regex Gist */}
-                <Carousel.Item style={carouselStyle}>
-                    <img
-                        className="d-block carousal-image"
-                        src={regexGistImage}
-                        alt="Ninth slide"
-                    />
-
-                    <Carousel.Caption style={carouselCaption}>
-                        <h3 className='carousel-header'>{regexGist.header}</h3>
-                        <Button variant="primary" onClick={handleModalShow} name='regexGist'>
-                            Show More Info
-                        </Button>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
+                {/* Regex Gist */}
+                <Grid.Row>
+                    {/* Regex Gist */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                        >
+                            <Image src={regexGistImage} style={imageStyle} />
+                            <Card.Content>
+                                <Card.Header as='h1'>{regexGist.header}</Card.Header>
+                                <Card.Meta content={populateLanguages(regexGist.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button variant="primary" onClick={handleModalShow} name='regexGist'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+            
             <>
                 {
                     project

@@ -143,7 +143,8 @@ Media Queries
   }
 
   .carousel-header {
-    display: none;
+    font-size: .50em;
+    text-shadow: 1px 1px black;
   }
 }
 @media screen and (max-width: 575px) {
