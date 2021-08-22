@@ -44,33 +44,15 @@ body {
 /* Resume Style End */
 
 /* Portfolio Start*/
-/* .ui.card>.content p, .ui.cards>.card>.content p {
-  margin-top: 5px;
-  color: var(--white);
-  font-weight: 2.5em;
-}
-
-.ui.card>.content>.header, .ui.cards>.card>.content>.header {
-  color: var(--carolina);
-  font-size: 1.5em !important;
-}
-
-.ui.card .meta p {
-  color: var(--orange) !important;
-}
-
-.ui.card, .ui.cards>.card {
-  background-color: var(--blueblack);
-  box-shadow: 0 1px 3px 0 var(--carolina), 0 0 0 1px var(--carolina);
-} */
-.carousel-caption {
-  text-align: left;
-}
-
-.carousel-item img {
+.carousal-image {
   height: 400px;
   width: 100%;
 }
+
+.carousel-item {
+  position: 'relative';
+}
+
 /* Portfolio End */
 
 /* Contact Form Style Start*/
@@ -155,9 +137,13 @@ Media Queries
   }
 }
 @media screen and (max-width: 768px) {
-  .carousel-item img {
-    height: 300px!important;
-    width: 100%!important;
+  .carousal-image {
+    height: 70vw;
+    width: 100%;
+  }
+
+  .carousel-header {
+    display: none;
   }
 }
 @media screen and (max-width: 575px) {
