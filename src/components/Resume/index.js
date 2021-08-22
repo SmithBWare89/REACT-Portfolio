@@ -3,6 +3,7 @@ import { Grid, Image, Container } from 'semantic-ui-react';
 import { Modal, Button } from 'react-bootstrap';
 import Magnifier from "react-magnifier";
 import resumeImage from '../../assets/images/resume.png';
+import resume from '../../assets/files/resume.pdf';
 
 export default function Resume() {
     const h1Style = {
@@ -57,7 +58,7 @@ export default function Resume() {
                         onClick={handleClose}
                     >
                         <a 
-                                href={require('../../assets/files/resume.pdf')}
+                                href={'https://drive.google.com/file/d/1vY8aK_VtbEy2vrUSG6xT9Ey7Q4vlm7Eq/view?usp=sharing'}
                                 download="Stephon Smith Resume"
                                 style={{ color: '#f7f7ff' }}
                         >
