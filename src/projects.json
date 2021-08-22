@@ -82,7 +82,7 @@
         "id": 8,
         "header": "Node - Professional Readme Generator",
         "altName": "readmeGenerator",
-        "description": "This project is a part of the coursework for the University of Central Florida coding bootcamp. It's aimed at utilizing Node and javascript to be able to run a program using the command line. Users are asked a series of questions that are generated using the "Inquirer" package and then given the option to immediately view their generated readme. I hope that this will be able to assist individuals as well as myself in the future by making the creation of a professional readme simple, quick, and easy.",
+        "description": "This project is a part of the coursework for the University of Central Florida coding bootcamp. It's aimed at utilizing Node and javascript to be able to run a program using the command line. Users are asked a series of questions that are generated using the \"Inquirer\" package and then given the option to immediately view their generated readme. I hope that this will be able to assist individuals as well as myself in the future by making the creation of a professional readme simple, quick, and easy.",
         "languages": ["Javascript", "Node"],
         "repository": "https://github.com/SmithBWare89/readme-generator",
         "deployed": "https://www.youtube.com/watch?v=JOvcEToevro"
