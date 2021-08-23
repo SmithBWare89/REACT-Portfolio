@@ -55,6 +55,7 @@ const isLocalhost = Boolean(
   }
   
   function registerValidSW(swUrl, config) {
+    console.log(swUrl)
     navigator.serviceWorker
       .register(swUrl)
       .then(registration => {

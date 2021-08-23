@@ -3,7 +3,6 @@ import { Grid, Image, Container } from 'semantic-ui-react';
 import { Modal, Button } from 'react-bootstrap';
 import Magnifier from "react-magnifier";
 import resumeImage from '../../assets/images/resume.png';
-import resume from '../../assets/files/resume.pdf';
 
 export default function Resume() {
     const h1Style = {
