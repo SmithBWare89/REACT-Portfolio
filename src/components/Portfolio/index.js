@@ -124,8 +124,8 @@ export default function Portfolio() {
                         >
                             <Image src={drinkologyImage} style={imageStyle} />
                             <Card.Content className='project-card-content'>
-                                <Card.Header as='h1' className='project-card-header'>{drinkology.header}</Card.Header>
-                                <Card.Meta className='project-card-meta' content={populateLanguages(drinkology.languages)}></Card.Meta>
+                                <Card.Header as='h1' className='project-card-header drinkology-header'>{drinkology.header}</Card.Header>
+                                <Card.Meta className='project-card-meta drinkology-meta' content={populateLanguages(drinkology.languages)}></Card.Meta>
                             </Card.Content>
                             <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='drinkology'>
                                 Show More Info
@@ -298,11 +298,12 @@ export default function Portfolio() {
                             backdrop="static"
                             keyboard={false}
                             centered
+                            className='project-modal'
                         >
-                            <Modal.Header closeButton>
-                                <Modal.Title>{project.header}</Modal.Title>
+                            <Modal.Header closeButton className='project-modal-header'>
+                                <Modal.Title className='project-modal-title'>{project.header}</Modal.Title>
                             </Modal.Header>
-                            <Modal.Body>
+                            <Modal.Body className='project-modal-body'>
                                     <h3>Description</h3>
                                     {project.description}
                                     <h3>Competencies</h3>
@@ -314,10 +315,10 @@ export default function Portfolio() {
                                     <p><a href={project.repository}>Repository</a></p>
                                     <p><a href={project.deployed}>Deployed</a></p>
                             </Modal.Body>
-                            <Modal.Footer>
-                            <Button variant="secondary" onClick={handleModalClose}>
-                                Close
-                            </Button>
+                            <Modal.Footer className='project-modal-footer'>
+                                <Button className='project-modal-button' variant="secondary" onClick={handleModalClose}>
+                                    Close
+                                </Button>
                             </Modal.Footer>
                             </Modal>
                         )

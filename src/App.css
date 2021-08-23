@@ -115,8 +115,12 @@ body {
   box-shadow: none !important;
 }
 
+.project-card:hover {
+  transition: none !important;
+}
+
 .project-card-content {
-  border: 2px solid var(--carolina);
+  border: 3px solid var(--carolina);
 }
 
 .project-card-header, .project-card-meta {
@@ -154,11 +158,54 @@ body {
 
 .project-button-style:hover {
   background-color: var(--smoky);
-  border: 1px solid var(--carolina);
+  border: 3px solid var(--carolina);
 }
 /* Project Card Style End */
 
+/* Modal Style Start */
+.project-modal-header, .project-modal-body, .project-modal-footer {
+  background-color: var(--blueblack);  
+  color: var(--white);
+  border: 3px solid var(--carolina);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
 
+.project-modal-body a {
+  color: var(--orange);
+}
+
+.project-modal-body a:hover {
+  color: var(--white);
+}
+
+.project-modal-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.project-modal-button {
+  width: 100%;
+  height: 100% !important;
+  margin: 0px;
+  padding: 10px;
+  font-size: 1.20em;
+  font-weight: 700;
+  background-color: var(--carolina);
+}
+
+.project-modal-button:hover {
+  background-color: var(--smoky);
+}
+
+.drinkology-header {
+  margin-bottom: 15px;
+}
+
+.drinkology-meta {
+  margin-bottom: 22px !important;
+}
+/* Modal Style End */
 /*
 Media Queries
 */
