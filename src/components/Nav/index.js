@@ -61,16 +61,18 @@ export default function Nav(props) {
     return (
     <Segment 
         inverted
-        style={styleOptions}
+        className='segment-style-options'
     >
         <Menu 
             inverted 
             pointing 
             secondary
+            className='segment-menu-style'
         >
             {/* Animated Name/Banner */}
             <Menu.Item 
                 name='myName'
+                className='segment-menu-style'
             >
                 <Transition
                     animation={animationState.animation}

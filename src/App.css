@@ -17,20 +17,23 @@ body {
 }
 
 /* Nav Style Start */
-.ui.inverted.menu .active.item {
+.segment-style-options {
+  background-color: var(--blueblack) !important;
+  color: var(--white);
+  text-align: center;
+  margin: 0px 0px 30px 0px !important;
+  position: sticky !important;
+  border-bottom: 2px solid var(--orange) !important;
+}
+
+.navActive {
   background-color: var(--orange) !important;
 }
 
-.ui.inverted.segment {
-  margin: 0px 0px 10px 0px;
-  position: sticky;
-  border-bottom: 2px solid var(--orange);
-}
-
-.ui.secondary.inverted.pointing.menu {
-  display: flex;
-  justify-content: center;
-  font-size: 1.25rem;
+.segment-menu-style {
+  display: flex !important;
+  justify-content: center !important;
+  font-size: 1.25rem !important;
 }
 /* Nav Style End */
 
@@ -67,16 +70,26 @@ body {
 /* Contact Form Style End */
 
 /* About Me Start */
+.about-me-span {
+  color: '#fc5130' !important; 
+  font-weight: '700' !important;
+}
+
 .ui.message:last-child {
   background-color: var(--blueblack);
   border: 2px solid var(--carolina);
 }
 
-.ui.message p {
+.about-me-message {
   color: var(--white) !important;
   opacity: 0.9;
   font-weight: 500;
   font-size: 1.070rem;
+}
+
+img.ui.rounded.image.about-me-image {
+  height: 100%;
+  width: 100%;
 }
 /* About Me End */
 
@@ -117,6 +130,13 @@ body {
 
 
 /* Project Card Style Start*/
+.project-card-image {
+  height: auto;
+  max-height: 175px;
+  width: auto;
+  max-width: 100%;
+}
+
 .project-card {
   background-color: var(--blueblack) !important;
   border: 3px solid var(--carolina) !important;
@@ -241,14 +261,8 @@ Media Queries
   }
 }
 @media screen and (max-width: 768px) {
-  .carousal-image {
-    height: 70vw;
-    width: 100%;
-  }
-
-  .carousel-header {
-    font-size: .50em;
-    text-shadow: 1px 1px black;
+  .segment-menu-style {
+    font-size: 11px !important;
   }
 }
 @media screen and (max-width: 575px) {

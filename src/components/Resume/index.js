@@ -54,6 +54,7 @@ export default function Resume() {
                                 href={'https://drive.google.com/file/d/1vY8aK_VtbEy2vrUSG6xT9Ey7Q4vlm7Eq/view?usp=sharing'}
                                 download="Stephon Smith Resume"
                                 style={{ color: '#f7f7ff' }}
+                                name='resume'
                         >
                             Save Resume
                         </a>
