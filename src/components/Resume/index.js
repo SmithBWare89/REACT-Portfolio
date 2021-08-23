@@ -1,16 +1,10 @@
 import React, {useState} from 'react';
-import { Grid, Image, Container } from 'semantic-ui-react';
+import { Grid, Image, Container, Header } from 'semantic-ui-react';
 import { Modal, Button } from 'react-bootstrap';
 import Magnifier from "react-magnifier";
 import resumeImage from '../../assets/images/resume.png';
 
 export default function Resume() {
-    const h1Style = {
-        textAlign: 'center',
-        color: '#f7f7ff',
-        fontSize: '4em'
-    }
-
     const [open, setOpen] = useState(false);
     const [image, setImage] = useState('');
     const handleOpen = (evt) => {
@@ -25,10 +19,10 @@ export default function Resume() {
     return (
         <section>
             <Container>
-                <h1 style={h1Style}>Click to Magnify</h1>
+                <Header className='resume-header'>Click to Magnify</Header>
                 <Grid columns={1}>
                     <Grid.Column>
-                        <Image name='resume' src={resumeImage} onClick={handleOpen} centered={true}/>
+                        <Image name='resume' src={resumeImage} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
                     </Grid.Column>
                 </Grid>
             </Container>

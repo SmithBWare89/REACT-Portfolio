@@ -13,7 +13,7 @@ export default function AboutMe() {
         <Container>
             <Grid>
                 <Grid.Column width={7}>
-                    <Image src={profileImage} rounded />
+                    <Image src={profileImage} rounded alt='A photo of me standing on a walking bridge with the Big Four Bridge in Louisville, Kentucky behind me.'/>
                 </Grid.Column>
                 <Grid.Column width={9}>
                     <Message style={messageStyle}>
@@ -36,7 +36,7 @@ export default function AboutMe() {
             </Grid>
         </Container>
         <Container style={{marginTop: '10px'}}>
-            <Image src={homepageImage} rounded />
+            <Image src={homepageImage} rounded alt='A photo of me on pay per view refereeing a professional wrestling match.'/>
         </Container>
         </>
     )

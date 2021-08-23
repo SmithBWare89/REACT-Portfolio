@@ -80,6 +80,15 @@ body {
 }
 /* About Me End */
 
+/* Resume Style Start */
+.resume-header {
+  text-align: center !important;
+  color: var(--white) !important;
+  font-size: 4em !important;
+  font-weight: 700;
+}
+/* Resume Style End */
+
 /* Footer Style Start */
   #footer {
     margin-top: 30px;

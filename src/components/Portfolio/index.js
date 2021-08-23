@@ -122,7 +122,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={drinkologyImage} style={imageStyle} />
+                            <Image src={drinkologyImage} style={imageStyle} alt='A snapshot of my project that searches for cocktail recipes.'/>
                             <Card.Content className='project-card-content'>
                                 <Card.Header as='h1' className='project-card-header drinkology-header'>{drinkology.header}</Card.Header>
                                 <Card.Meta className='project-card-meta drinkology-meta' content={populateLanguages(drinkology.languages)}></Card.Meta>
@@ -139,7 +139,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={ollieWilliamsImage} style={imageStyle} />
+                            <Image src={ollieWilliamsImage} style={imageStyle} alt='A photo of my weather dashboard project.'/>
                             <Card.Content className='project-card-content'>
                             <Card.Header as='h1' className='project-card-header'>{ollieWilliamsWeather.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(ollieWilliamsWeather.languages)} ></Card.Meta>
@@ -160,7 +160,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={pwaBudgetImage} style={imageStyle} />
+                            <Image src={pwaBudgetImage} style={imageStyle} alt='A photo of my progressive web application budget tracker project.'/>
                             <Card.Content className='project-card-content'>
                                 <Card.Header as='h1' className='project-card-header'>{pwaBudget.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(pwaBudget.languages)}></Card.Meta>
@@ -177,7 +177,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={soShulImage} style={imageStyle} className='so-shul-image'/>
+                            <Image src={soShulImage} style={imageStyle} className='so-shul-image' alt='A photo of my demonstration of a REST API with a minimalist front end.'/>
                             <Card.Content className='project-card-content so-shul-content'>
                                 <Card.Header as='h1' className='project-card-header so-shul-header'>{soShul.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(soShul.languages)}></Card.Meta>
@@ -198,7 +198,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={teamProfileImage} style={imageStyle, {height: '175px'}} />
+                            <Image src={teamProfileImage} style={imageStyle, {height: '175px'}} alt='A snapshot of my team profile generator project that uses the command line.'/>
                             <Card.Content className='project-card-content'>
                                 <Card.Header as='h1' className='project-card-header'>{teamProfileGenerator.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(teamProfileGenerator.languages)}></Card.Meta>
@@ -215,7 +215,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={reduxECommerceStoreImage} style={imageStyle} />
+                            <Image src={reduxECommerceStoreImage} style={imageStyle} alt='A photo of my shopping website that I refactored.'/>
                             <Card.Content className='project-card-content'>
                                 <Card.Header as='h1' className='project-card-header'>{reduxECommerceStore.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(reduxECommerceStore.languages)}></Card.Meta>
@@ -236,7 +236,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={scriptifyQuizImage} style={imageStyle, {height: '175px'}} />
+                            <Image src={scriptifyQuizImage} style={imageStyle, {height: '175px'}} alt='A photo of my Javascript quiz website that uses a timer and stores your high score!'/>
                             <Card.Content className='project-card-content'>
                                 <Card.Header as='h1' className='project-card-header'>{scriptifyQuiz.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(scriptifyQuiz.languages)}></Card.Meta>
@@ -253,7 +253,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={readmeGeneratorImage} style={imageStyle, {height: '175px'}} />
+                            <Image src={readmeGeneratorImage} style={imageStyle, {height: '175px'}} alt='A photo of my Readme Generator project.'/>
                             <Card.Content className='project-card-content'>
                                 <Card.Header as='h1' className='project-card-header'>{readmeGenerator.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(readmeGenerator.languages)}></Card.Meta>
@@ -274,7 +274,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={regexGistImage} style={imageStyle} />
+                            <Image src={regexGistImage} style={imageStyle} alt='A photo of the Regex gist to show URL matching.'/>
                             <Card.Content className='project-card-content'>
                                 <Card.Header as='h1' className='project-card-header'>{regexGist.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(regexGist.languages)}></Card.Meta>
