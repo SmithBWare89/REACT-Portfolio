@@ -115,7 +115,7 @@ body {
   box-shadow: none !important;
 }
 
-.project-card:hover {
+.project-card:hover, .project-card-header:hover, .project-card-meta:hover, .project-card-content:hover {
   transition: none !important;
 }
 
