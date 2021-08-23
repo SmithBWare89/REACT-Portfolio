@@ -107,6 +107,58 @@ body {
 /* Footer Style End */
 
 
+/* Project Card Style Start*/
+.project-card {
+  background-color: var(--blueblack) !important;
+  border: 3px solid var(--carolina) !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.project-card-content {
+  border: 2px solid var(--carolina);
+}
+
+.project-card-header, .project-card-meta {
+  color: var(--white) !important;
+}
+
+.project-card-header {
+  font-size: 1.40rem !important;
+  font-weight: 700;
+}
+
+.project-card-meta {
+  font-size: 1.10rem !important;
+  color: var(--orange) !important;
+  font-weight: 700;
+}
+
+.so-shul-image {
+  height: 175px !important;
+}
+
+.so-shul-content {
+  padding: .80em !important;
+}
+
+.so-shul-header {
+  margin-bottom: 4.5px !important;
+}
+
+.project-button-style {
+  font-size: 1.25em;
+  font-weight: 700;
+  background-color: var(--carolina);
+}
+
+.project-button-style:hover {
+  background-color: var(--smoky);
+  border: 1px solid var(--carolina);
+}
+/* Project Card Style End */
+
+
 /*
 Media Queries
 */
