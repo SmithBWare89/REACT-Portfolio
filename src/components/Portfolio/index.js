@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Carousel, Button, Modal } from 'react-bootstrap';
-import { Container, List, Image, Header, Card, Item, Grid } from 'semantic-ui-react';
+import { Button, Modal } from 'react-bootstrap';
+import { Container, List, Image, Card, Grid } from 'semantic-ui-react';
 
 import projects from '../../projects.json';
 import drinkologyImage from '../../assets/images/drinkology.png';
