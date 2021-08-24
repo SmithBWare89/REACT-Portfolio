@@ -159,7 +159,7 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={soShulImage} className='project-card-image' className='so-shul-image' alt='A photo of my demonstration of a REST API with a minimalist front end.'/>
+                            <Image src={soShulImage} className='project-card-image so-shul-image' alt='A photo of my demonstration of a REST API with a minimalist front end.'/>
                             <Card.Content className='project-card-content so-shul-content'>
                                 <Card.Header as='h1' className='project-card-header so-shul-header'>{soShul.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(soShul.languages)}></Card.Meta>

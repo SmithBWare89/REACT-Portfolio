@@ -4,10 +4,6 @@ import homepageImage from '../../assets/images/homepage.jpg';
 import profileImage from '../../assets/images/profile.jpg'
 
 export default function AboutMe() {
-    const messageStyle = {
-        color: '#f7f7ff !important', 
-        fontSize: '1.5em !important'
-    }
     return (
         <>
         <Container>

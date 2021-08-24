@@ -239,6 +239,21 @@ img.ui.rounded.image.about-me-image {
 Media Queries
 */
 
+#form-button-control-public {
+  font-size: 1.45em;
+  font-weight: 700;
+  background-color: var(--carolina);
+  border: 2px solid var(--carolina);
+  color: var(--white);
+  padding: 15px;
+  width: 25%;
+  border-radius: 8px;
+}
+
+#form-button-control-public:hover {
+  background-color: var(--blueblack);
+}
+
 @media screen and (max-width: 980px) {
   .ui.column.grid>[class*="seven wide"].column, .ui.grid>.column.row>[class*="seven wide"].column, .ui.grid>.row>[class*="seven wide"].column, .ui.grid>[class*="seven wide"].column {
     width: 100%!important;

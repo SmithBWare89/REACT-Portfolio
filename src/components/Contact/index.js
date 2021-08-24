@@ -56,7 +56,9 @@ export default function Contact() {
         <Container>
             <h1 id="contact-header">Contact Me</h1>
             <Form
-                onSubmit={'@mailto:smithwrestling89@gmail.com'}
+                as='form'
+                method="post"
+                action={`mailto:smithwrestling89@gmail.com?subject=Contact Inquiry?`}
             >
                 <Group widths='equal'>
                     <Field
@@ -107,12 +109,12 @@ export default function Contact() {
                     header='Form Completed'
                     content='Your information has been sent over!'
                 />
-                <Field
+                <Button
+                    as='button'
                     id='form-button-control-public'
-                    control={Button}
-                    content='Submit'
-                    label='Submit'
-                />
+                    type='submit'
+                    onClick={(event) => event.preventDefault()}
+                > Submit </Button>
             </Form>
         </Container>
     )
