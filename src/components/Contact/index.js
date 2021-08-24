@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../../App.css';
-import { Form, Container, Button, Message } from 'semantic-ui-react';
+import { Form, Container, Message } from 'semantic-ui-react';
 const { Group, Input, TextArea, Button, Field } = Form;
 
 export default function Contact() {
