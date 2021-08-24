@@ -37,7 +37,9 @@ function App() {
             ? <Resume />
             : currentLink === 'Portfolio' && !contactSelected
               ? <Portfolio />
-              : <Contact />
+              : currentLink === 'Contact' && !contactSelected
+                ? <Contact />
+                : false
       }
       <Footer />
     </main>
