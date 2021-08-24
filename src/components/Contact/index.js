@@ -104,16 +104,11 @@ export default function Contact() {
                     </div>
 
                 )}
-                <Message 
-                    success
-                    header='Form Completed'
-                    content='Your information has been sent over!'
-                />
+                
                 <Button
                     as='button'
                     id='form-button-control-public'
                     type='submit'
-                    onClick={(event) => event.preventDefault()}
                 > Submit </Button>
             </Form>
         </Container>
