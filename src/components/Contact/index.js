@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../../App.css';
-import { Form, Container } from 'semantic-ui-react';
+import { Form, Container, Button, Message } from 'semantic-ui-react';
 const { Group, Input, TextArea, Button, Field } = Form;
 
 export default function Contact() {
@@ -55,7 +55,9 @@ export default function Contact() {
     return (
         <Container>
             <h1 id="contact-header">Contact Me</h1>
-            <Form>
+            <Form
+                onSubmit={'@mailto:smithwrestling89@gmail.com'}
+            >
                 <Group widths='equal'>
                     <Field
                         id='first-name'
@@ -100,7 +102,11 @@ export default function Contact() {
                     </div>
 
                 )}
-
+                <Message 
+                    success
+                    header='Form Completed'
+                    content='Your information has been sent over!'
+                />
                 <Field
                     id='form-button-control-public'
                     control={Button}
