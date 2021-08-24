@@ -16,7 +16,7 @@
             }
         ],
         "repository": "https://github.com/Mayorgak/drinkology",
-        "deployed": "https://damp-peak-42313.herokuapp.com/"
+        "deployed": "https://drinkology.herokuapp.com/"
     },
     "ollieWilliamsWeather": {
         "id": 1,
