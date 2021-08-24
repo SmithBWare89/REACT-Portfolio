@@ -19,7 +19,6 @@ function App() {
   )
 
   const [currentLink, setCurrentLink] = useState(navLinks[0]);
-  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <main>
@@ -27,17 +26,15 @@ function App() {
         navLinks={navLinks}
         setCurrentLink={setCurrentLink}
         currentLink={currentLink}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
       />
       {
-        currentLink === 'About Me' && !contactSelected
+        currentLink === 'About Me'
           ? <AboutMe />
-          : currentLink === 'Resume' && !contactSelected
+          : currentLink === 'Resume'
             ? <Resume />
-            : currentLink === 'Portfolio' && !contactSelected
+            : currentLink === 'Portfolio'
               ? <Portfolio />
-              : currentLink === 'Contact' && !contactSelected
+              : currentLink === 'Contact'
                 ? <Contact />
                 : false
       }

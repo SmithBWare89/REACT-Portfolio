@@ -6,8 +6,6 @@ export default function Nav(props) {
         navLinks,
         setCurrentLink,
         currentLink,
-        contactSelected,
-        setContactSelected
     } = props;
 
     const transitions = [
@@ -22,7 +20,6 @@ export default function Nav(props) {
     const [menuState, setMenuState] = useState('About Me');
     function handleMenuClick(e, { name }) {
         setMenuState(name);
-        setContactSelected(false);
     }
 
     const [animationState, setAnimationState] = useState({
@@ -81,11 +78,7 @@ export default function Nav(props) {
                     name={link}
                     active={menuState === link}
                     onClick={handleMenuClick}
-                    className={
-                        link === 'Contact'
-                            ? `${currentLink === link && setContactSelected(true) && 'navActive'}`
-                            : `${currentLink === link && !contactSelected && 'navActive'}`
-                    }
+                    className={`${currentLink === link && 'navActive'}`}
                     key={link}
                  >
                     <span
