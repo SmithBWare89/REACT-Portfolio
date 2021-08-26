@@ -50,24 +50,26 @@ body {
 
 /* Resume Style End */
 
-/* Contact Form Style Start*/
-.ui.form .field>label {
-  color: var(--carolina);
-  font-size: 2em;
-  margin-bottom:10px !important;
+/* Contact  Style Start*/
+.contact-header {
+  color: var(--white) !important;
+  font-size: 6em !important;
+  text-align: center !important;
 }
 
-.error-text {
-  color: var(--orange);
-  font-size: 2em;
+.contact-email {
+  color: var(--white) !important;
+  text-align: center !important;
 }
 
-#contact-header{
+.contact-email a {
   color: var(--white);
-  font-size: 6em;
-  text-align: center;
 }
-/* Contact Form Style End */
+
+.contact-email a:hover {
+  color: var(--orange);
+}
+/* Contact  Style End */
 
 /* About Me Start */
 .about-me-span {
