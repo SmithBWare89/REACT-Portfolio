@@ -104,5 +104,19 @@
         "languages": ["Node", "React", "Semantic-UI-React", "Bootstrap", "HTML", "Javascript", "CSS"],
         "repository": "https://github.com/SmithBWare89/REACT-Portfolio",
         "deployed": "https://smithbware89.github.io/REACT-Portfolio/"
+    },
+    "appIcons": {
+        "bootstrap" : "../../assets/images/bootstrap.png",
+        "css3" : "../../assets/images/css3.png",
+        "heroku" : "../../assets/images/heroku.png",
+        "html5" : "../../assets/images/html5.png",
+        "Java" : "../../assets/images/Java.png",
+        "javascript" : "../../assets/images/javascript.png",
+        "jquery" : "../../assets/images/jquery.png",
+        "mongodb" : "../../assets/images/mongodb.png",
+        "node" : "../../assets/images/node.png",
+        "react" : "../../assets/images/react.png",
+        "Spring" : "../../assets/images/Spring.png",
+        "sql" : "../../assets/images/sql.png"
     }
 }

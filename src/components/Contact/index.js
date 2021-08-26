@@ -1,8 +1,7 @@
 import React from 'react';
 import '../../App.css';
-import { Container, Header, Icon, Grid } from 'semantic-ui-react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faReact, faCss3Alt, faJava, faJsSquare, faBootstrap, faNode, faAngular,   } from '@fortawesome/free-brands-svg-icons';
+import SkillImages from '../SkillImages'
+import { Container, Header, Icon, Image } from 'semantic-ui-react';
 
 export default function Contact() {
     return (
@@ -17,13 +16,8 @@ export default function Contact() {
 
             <br />
 
-            <Header className="contact-header">Skills</Header>
-            <Header as='h2' className='contact-email' color='white'>
-                <span>
-                <Icon aria-hidden='false' name='mail' size='large' className='contact-icon'/>
-                : <a href='mailto:SmithWrestling89@gmail.com?subject=Job Inquiry&body=Message'>SmithWrestling89@gmail.com</a>
-                </span>
-            </Header>
+            {/* <Header className="contact-header">Skills</Header>
+            <SkillImages /> */}
         </Container>
     )
 }
