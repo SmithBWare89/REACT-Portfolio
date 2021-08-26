@@ -95,5 +95,14 @@
         "languages": ["Regex", "Readme"],
         "repository": "https://gist.github.com/SmithBWare89/9d121b06ea35a89aa46a4426e4697dd9",
         "deployed": "https://gist.github.com/SmithBWare89/9d121b06ea35a89aa46a4426e4697dd9"
+    },
+    "reactPortfolio": {
+        "id": 9,
+        "header": "REACT Portfolio",
+        "altName": "reactPortfolio",
+        "description": "This project is intended to be a demonstration of my usage of REACT. I've recreated my original developer portfolio and have added in a carousel that opens into a modal with additional information on each project. I've also added a basic resume to the portfolio as well as links to my Github, Stack Overflow, and LinkedIn accounts.",
+        "languages": ["Node", "React", "Semantic-UI-React", "Bootstrap", "HTML", "Javascript", "CSS"],
+        "repository": "https://github.com/SmithBWare89/REACT-Portfolio",
+        "deployed": "https://smithbware89.github.io/REACT-Portfolio/"
     }
 }

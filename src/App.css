@@ -227,20 +227,22 @@ img.ui.rounded.image.about-me-image {
   background-color: var(--smoky);
 }
 
-.drinkology-header {
+.card-adjustment-header {
   margin-bottom: 15px;
 }
 
-.drinkology-meta {
+.card-adjustment-meta {
   margin-bottom: 22px !important;
 }
 /* Modal Style End */
 /*
+
+
 Media Queries
 */
 
 #form-button-control-public {
-  font-size: 1.45em;
+  font-size: 1.40em;
   font-weight: 700;
   background-color: var(--carolina);
   border: 2px solid var(--carolina);

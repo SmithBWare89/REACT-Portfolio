@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { Container, List, Image, Card, Grid } from 'semantic-ui-react';
 
+// Add project image below
 import projects from '../../projects.json';
 import drinkologyImage from '../../assets/images/drinkology.png';
 import soShulImage from '../../assets/images/soShul.png';
@@ -12,9 +13,12 @@ import reduxECommerceStoreImage from '../../assets/images/eCommerceRefactor.png'
 import scriptifyQuizImage from '../../assets/images/scriptifyQuiz.png';
 import readmeGeneratorImage from '../../assets/images/readmeGenerator.png';
 import regexGistImage from '../../assets/images/regexGist.png';
+import reactPortfolioImage from '../../assets/images/reactPortfolio.JPG';
 
 export default function Portfolio() {
+    // Bring in new project
      const {
+        reactPortfolio,
         drinkology,
         pwaBudget,
         soShul,
@@ -30,6 +34,7 @@ export default function Portfolio() {
     const [project, setProject] = useState('');
     const handleModalClose = () => setShow(false);
 
+    // Add new projects to array and update Switch cases
     const handleModalShow = (evt) => {
         // Update projects array to be able to find
         const projects = [
@@ -41,11 +46,13 @@ export default function Portfolio() {
             'reduxECommerceStore',
             'scriptifyQuiz',
             'readmeGenerator',
-            'regexGist'
+            'regexGist',
+            'reactPortfolio'
         ];
 
         const found = projects.find(element => element === evt.target.name);
 
+        // Add new Switch case
         switch (found) {
             case 'drinkology':
                 setProject(drinkology);
@@ -83,6 +90,10 @@ export default function Portfolio() {
                 setProject(regexGist);
                 setShow(true)
                 break;
+            case 'reactPortfolio':
+                setProject(reactPortfolio);
+                setShow(true);
+                break;
             default:
                 console.log('Cannot find project!');
         }
@@ -95,8 +106,25 @@ export default function Portfolio() {
     return (
         <Container style={{ marginBottom: '100px !important' }}>      
             <Grid columns='two' divided doubling={true} style={{ marginBottom: '100px !important' }}>
-                {/* Drinkology and Ollie Williams */}
+                {/* REACT Portfolio and REACT Portfolio */}
                 <Grid.Row>
+                    {/* REACT Portfolio */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                            className='project-card'
+                        >
+                            <Image src={reactPortfolioImage} className='project-card-image' alt='A snapshot of my REACT portfolio project.' />
+                            <Card.Content className='project-card-content'>
+                                <Card.Header as='h1' className='project-card-header card-adjustment-header'>{reactPortfolio.header}</Card.Header>
+                                <Card.Meta className='project-card-meta card-adjustment-meta' content={populateLanguages(reactPortfolio.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='reactPortfolio'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
                     {/* Drinkology */}
                     <Grid.Column>
                         <Card
@@ -106,14 +134,18 @@ export default function Portfolio() {
                         >
                             <Image src={drinkologyImage} className='project-card-image' alt='A snapshot of my project that searches for cocktail recipes.'/>
                             <Card.Content className='project-card-content'>
-                                <Card.Header as='h1' className='project-card-header drinkology-header'>{drinkology.header}</Card.Header>
-                                <Card.Meta className='project-card-meta drinkology-meta' content={populateLanguages(drinkology.languages)}></Card.Meta>
+                                <Card.Header as='h1' className='project-card-header card-adjustment-header'>{drinkology.header}</Card.Header>
+                                <Card.Meta className='project-card-meta card-adjustment-meta' content={populateLanguages(drinkology.languages)}></Card.Meta>
                             </Card.Content>
                             <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='drinkology'>
                                 Show More Info
                             </Button>
                         </Card>
                     </Grid.Column>
+                </Grid.Row>
+
+                {/* Ollie Williams and So-Shul */}
+                <Grid.Row>
                     {/* Ollie Williams Budget */}
                     <Grid.Column>
                         <Card
@@ -121,9 +153,9 @@ export default function Portfolio() {
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={ollieWilliamsImage} className='project-card-image' alt='A photo of my weather dashboard project.'/>
+                            <Image src={ollieWilliamsImage} className='project-card-image' alt='A photo of my weather dashboard project.' />
                             <Card.Content className='project-card-content'>
-                            <Card.Header as='h1' className='project-card-header'>{ollieWilliamsWeather.header}</Card.Header>
+                                <Card.Header as='h1' className='project-card-header'>{ollieWilliamsWeather.header}</Card.Header>
                                 <Card.Meta className='project-card-meta' content={populateLanguages(ollieWilliamsWeather.languages)} ></Card.Meta>
                             </Card.Content>
                             <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='ollieWilliamsWeather'>
@@ -131,9 +163,26 @@ export default function Portfolio() {
                             </Button>
                         </Card>
                     </Grid.Column>
+                    {/* so-Shul Network Budget */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                            className='project-card'
+                        >
+                            <Image src={soShulImage} className='project-card-image so-shul-image' alt='A photo of my demonstration of a REST API with a minimalist front end.'/>
+                            <Card.Content className='project-card-content so-shul-content'>
+                                <Card.Header as='h1' className='project-card-header card-adjustment-header'>{soShul.header}</Card.Header>
+                                <Card.Meta className='project-card-meta card-adjustment-meta' content={populateLanguages(soShul.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='soShul'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
                 </Grid.Row>
 
-                {/* PWA Budget and So-Shul */}
+                {/* pwaBudget and Redux eCommerce */}
                 <Grid.Row>
                     {/* pwaBudget */}
                     <Grid.Column>
@@ -148,44 +197,6 @@ export default function Portfolio() {
                                 <Card.Meta className='project-card-meta' content={populateLanguages(pwaBudget.languages)}></Card.Meta>
                             </Card.Content>
                             <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='pwaBudget'>
-                                Show More Info
-                            </Button>
-                        </Card>
-                    </Grid.Column>
-                    {/* so-Shul Network Budget */}
-                    <Grid.Column>
-                        <Card
-                            fluid
-                            onClick={handleModalShow}
-                            className='project-card'
-                        >
-                            <Image src={soShulImage} className='project-card-image so-shul-image' alt='A photo of my demonstration of a REST API with a minimalist front end.'/>
-                            <Card.Content className='project-card-content so-shul-content'>
-                                <Card.Header as='h1' className='project-card-header so-shul-header'>{soShul.header}</Card.Header>
-                                <Card.Meta className='project-card-meta' content={populateLanguages(soShul.languages)}></Card.Meta>
-                            </Card.Content>
-                            <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='soShul'>
-                                Show More Info
-                            </Button>
-                        </Card>
-                    </Grid.Column>
-                </Grid.Row>
-
-                {/* Team Profile and Redux eCommerce */}
-                <Grid.Row>
-                    {/* Team Profile Generator */}
-                    <Grid.Column>
-                        <Card
-                            fluid
-                            onClick={handleModalShow}
-                            className='project-card'
-                        >
-                            <Image src={teamProfileImage} className='project-card-image' style={{height: '175px'}} alt='A snapshot of my team profile generator project that uses the command line.'/>
-                            <Card.Content className='project-card-content'>
-                                <Card.Header as='h1' className='project-card-header'>{teamProfileGenerator.header}</Card.Header>
-                                <Card.Meta className='project-card-meta' content={populateLanguages(teamProfileGenerator.languages)}></Card.Meta>
-                            </Card.Content>
-                            <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='teamProfileGenerator'>
                                 Show More Info
                             </Button>
                         </Card>
@@ -247,7 +258,7 @@ export default function Portfolio() {
                     </Grid.Column>
                 </Grid.Row>
 
-                {/* Regex Gist */}
+                {/* Regex Gist and Team Profile */}
                 <Grid.Row>
                     {/* Regex Gist */}
                     <Grid.Column>
@@ -262,6 +273,23 @@ export default function Portfolio() {
                                 <Card.Meta className='project-card-meta' content={populateLanguages(regexGist.languages)}></Card.Meta>
                             </Card.Content>
                             <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='regexGist'>
+                                Show More Info
+                            </Button>
+                        </Card>
+                    </Grid.Column>
+                    {/* Team Profile Generator */}
+                    <Grid.Column>
+                        <Card
+                            fluid
+                            onClick={handleModalShow}
+                            className='project-card'
+                        >
+                            <Image src={teamProfileImage} className='project-card-image' style={{ height: '175px' }} alt='A snapshot of my team profile generator project that uses the command line.' />
+                            <Card.Content className='project-card-content'>
+                                <Card.Header as='h1' className='project-card-header'>{teamProfileGenerator.header}</Card.Header>
+                                <Card.Meta className='project-card-meta' content={populateLanguages(teamProfileGenerator.languages)}></Card.Meta>
+                            </Card.Content>
+                            <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='teamProfileGenerator'>
                                 Show More Info
                             </Button>
                         </Card>
