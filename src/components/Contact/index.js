@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import SkillImages from '../SkillImages'
-import { Container, Header, Icon, Image } from 'semantic-ui-react';
+import { Container, Header, Icon} from 'semantic-ui-react';
 
 export default function Contact() {
     return (

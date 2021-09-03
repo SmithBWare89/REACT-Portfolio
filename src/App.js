@@ -6,6 +6,7 @@ import Portfolio from './components/Portfolio/';
 import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
+// import SkillImages from './components/SkillImages';
 import './App.css';
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       'About Me',
       'Resume',
       'Portfolio',
-      'Contact'
+      // 'Skills',
+      'Contact',
     ]
   )
 
@@ -34,9 +36,11 @@ function App() {
             ? <Resume />
             : currentLink === 'Portfolio'
               ? <Portfolio />
-              : currentLink === 'Contact'
-                ? <Contact />
-                : false
+              // : currentLink === 'Skills'
+              // ? <SkillImages />
+                : currentLink === 'Contact'
+                  ? <Contact />
+                  : false
       }
       <Footer />
     </main>

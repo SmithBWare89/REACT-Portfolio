@@ -9,9 +9,13 @@ import resumeImage3 from '../../assets/images/resume3.png';
 export default function Resume() {
     const [open, setOpen] = useState(false);
     const [image, setImage] = useState('');
-    const handleOpen = (evt) => {
-        if (evt.target.name === 'resume') {
-            setImage(resumeImage);
+    const handleOpen = (evt) => {      
+        if (evt.target.name === 'resumeImage') {
+            setImage(resumeImage)
+        } else if (evt.target.name === 'resumeImage2') {
+            setImage(resumeImage2)
+        } else if (evt.target.name === 'resumeImage3') {
+            setImage(resumeImage3)
         }
 
         return setOpen(true);
@@ -22,15 +26,15 @@ export default function Resume() {
         <section>
             <Container>
                 <Header className='resume-header'>Click to Magnify</Header>
-                <Grid columns={3}>
+                <Grid columns={3} stackable={true}>
                     <Grid.Column>
-                        <Image name='resume' src={resumeImage} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
+                        <Image className="resume-image" name='resumeImage' src={resumeImage} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
                     </Grid.Column>
                     <Grid.Column>
-                        <Image name='resume' src={resumeImage2} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
+                        <Image className="resume-image" name='resumeImage2' src={resumeImage2} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
                     </Grid.Column>
                     <Grid.Column>
-                        <Image name='resume' src={resumeImage3} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
+                        <Image className="resume-image" name='resumeImage3' src={resumeImage3} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
                     </Grid.Column>
                 </Grid>
             </Container>

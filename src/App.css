@@ -102,6 +102,11 @@ img.ui.rounded.image.about-me-image {
   font-size: 4em !important;
   font-weight: 700;
 }
+
+.resume-image {
+  height: 300px;
+  width: 300px;
+}
 /* Resume Style End */
 
 /* Footer Style Start */
@@ -238,6 +243,21 @@ img.ui.rounded.image.about-me-image {
 }
 /* Modal Style End */
 /*
+
+/* Skill Images Style Start */
+.skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.skill-images {
+  border: 5px solid blue;
+  height: 250px !important;
+  width: 250px !important;
+}
+/* Skill Images Style End */
 
 
 Media Queries
