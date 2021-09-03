@@ -3,6 +3,8 @@ import { Grid, Image, Container, Header } from 'semantic-ui-react';
 import { Modal, Button } from 'react-bootstrap';
 import Magnifier from "react-magnifier";
 import resumeImage from '../../assets/images/resume.png';
+import resumeImage2 from '../../assets/images/resume2.png';
+import resumeImage3 from '../../assets/images/resume3.png';
 
 export default function Resume() {
     const [open, setOpen] = useState(false);
@@ -20,9 +22,15 @@ export default function Resume() {
         <section>
             <Container>
                 <Header className='resume-header'>Click to Magnify</Header>
-                <Grid columns={1}>
+                <Grid columns={3}>
                     <Grid.Column>
                         <Image name='resume' src={resumeImage} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Image name='resume' src={resumeImage2} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <Image name='resume' src={resumeImage3} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
                     </Grid.Column>
                 </Grid>
             </Container>
@@ -51,7 +59,7 @@ export default function Resume() {
                         onClick={handleClose}
                     >
                         <a 
-                                href={'https://drive.google.com/file/d/1vY8aK_VtbEy2vrUSG6xT9Ey7Q4vlm7Eq/view?usp=sharing'}
+                                href={'https://tinyurl.com/stephon-smith-resume'}
                                 download="Stephon Smith Resume"
                                 style={{ color: '#f7f7ff' }}
                                 name='resume'
