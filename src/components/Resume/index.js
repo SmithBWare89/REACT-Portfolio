@@ -63,7 +63,7 @@ export default function Resume() {
                         onClick={handleClose}
                     >
                         <a 
-                                href={'https://tinyurl.com/stephon-smith-resume'}
+                                href={'https://drive.google.com/file/d/1bYSNhHQidbBqCei8rNvb5AUUSsGXm78v/view?usp=sharing'}
                                 download="Stephon Smith Resume"
                                 style={{ color: '#f7f7ff' }}
                                 name='resume'
