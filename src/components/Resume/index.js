@@ -39,7 +39,7 @@ export default function Resume() {
                 </Grid>
             </Container>
         <>
-            <Modal show={open} onHide={handleClose} centered>
+            <Modal show={open} onHide={handleClose} centered size="small">
                 <Modal.Header closeButton>
                     <Modal.Title>
                         My Resume
