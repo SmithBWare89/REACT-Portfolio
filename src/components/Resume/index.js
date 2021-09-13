@@ -56,7 +56,7 @@ export default function Resume() {
                         onClick={handleClose}
                     >
                         <a 
-                                href={'https://docs.google.com/document/d/1ZnlpK13Xhcfs4xwDWKyTWN8-xyInqB5vPmrWv174b5o/edit?usp=sharing'}
+                                href={'https://docs.google.com/document/d/11xnCZSwIFYAu_I6_SahA7TEU9pKbajqc9B34RrHgG6s/edit?usp=sharing'}
                                 download="Stephon Smith Resume"
                                 style={{ color: '#f7f7ff' }}
                                 name='resume'

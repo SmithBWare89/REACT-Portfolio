@@ -15,8 +15,8 @@
                 "repository": "https://github.com/leo-ayala"
             }
         ],
-        "repository": "https://github.com/Mayorgak/drinkology",
-        "deployed": "https://drinkology.herokuapp.com/"
+        "repository": "https://tinyurl.com/Drinkology",
+        "deployed": "https://tinyurl.com/DrinkologyApp"
     },
     "ollieWilliamsWeather": {
         "id": 1,
@@ -51,59 +51,32 @@
         "repository": "https://github.com/SmithBWare89/so-shul-api",
         "deployed": "https://so-shul.herokuapp.com/"
     },
-    "teamProfileGenerator": {
-        "id": 4,
-        "header": "Object-Oriented Programming - Team Profile Generator",
-        "altName": "teamProfile",
-        "description": "Utilized the Node package Inquirer and object-oriented programming best practices to create a command-line application that takes in information about employees on a software engineering team and then generates an HTML webpage to display a summary of each person within the organization.",
-        "languages": ["HTML", "Javascript", "CSS", "Node"],
-        "repository": "https://github.com/SmithBWare89/team-profile-manager",
-        "deployed": "https://github.com/SmithBWare89/team-profile-manager/blob/master/dist/sample-html.html"
-    },
     "reduxECommerceStore": {
-        "id": 5,
+        "id": 4,
         "header": "Redux - eCommerce Refactor",
         "altName": "eCommerceRefactor",
         "description": "This project is intended to be a demonstration of refactoring a Context API to one that uses a Redux store. For this project we were provided starter code of an e-commerce side that we added state management to throughout the module. As students we were challenged with reading the Redux documentation to increase our understanding of another package that performs similar functionality while also increasing our exposure to how developers will have to parse through documentation they may be unfamiliar with to resolve an issue in development. It's intended that when reviewing the code behind this project that you'll find a refactored code document that uses Redux to handle state management for the web application.",
         "languages": ["Javascript", "Node", "React-Redux", "Redux"],
-        "repository": "https://github.com/SmithBWare89/Redux-E-Commerce-Refactor",
-        "deployed": "https://redux-ecommerce-refactor.herokuapp.com/"
-    },
-    "scriptifyQuiz": {
-        "id": 6,
-        "header": "Web API - Scriptify Quiz",
-        "altName": "scriptifyQuiz",
-        "description": "This application is a coding challenge that's a part of the University of Central Florida's coding bootcamp. It's intended that this application will test my knowledge of Web API's as well as all information previously covered within this course. For this challenge I aim to create a website that generates a quiz on Javascript basics.",
-        "languages": ["HTML", "CSS", "Javascript"],
-        "repository": "https://github.com/SmithBWare89/scriptify-quizzes",
-        "deployed": "https://smithbware89.github.io/scriptify-quizzes/"
-    },
-    "readmeGenerator": {
-        "id": 7,
-        "header": "Node - Professional Readme Generator",
-        "altName": "readmeGenerator",
-        "description": "This project is a part of the coursework for the University of Central Florida coding bootcamp. It's aimed at utilizing Node and javascript to be able to run a program using the command line. Users are asked a series of questions that are generated using the \"Inquirer\" package and then given the option to immediately view their generated readme. I hope that this will be able to assist individuals as well as myself in the future by making the creation of a professional readme simple, quick, and easy.",
-        "languages": ["Javascript", "Node"],
-        "repository": "https://github.com/SmithBWare89/readme-generator",
-        "deployed": "https://www.youtube.com/watch?v=JOvcEToevro"
-    },
-    "regexGist": {
-        "id": 8,
-        "header": "Gist - Regex Tutorial",
-        "altName": "regexTutorial",
-        "description": "Regular Expressions, or regex, are powerful and useful tools in web development and coding because the data that can be drawn from them can be used in multiple ways to enhance and simplify certain processes in regards to coding. The gist of this gist is to be able to break down what goes into the creation of a regex as well as identify how powerful this tool can be in capturing and validating the data we receive from users on the front end.",
-        "languages": ["Regex", "Readme"],
-        "repository": "https://gist.github.com/SmithBWare89/9d121b06ea35a89aa46a4426e4697dd9",
-        "deployed": "https://gist.github.com/SmithBWare89/9d121b06ea35a89aa46a4426e4697dd9"
+        "repository": "https://tinyurl.com/ReduxRepo",
+        "deployed": "https://tinyurl.com/ReduxECommerce"
     },
     "reactPortfolio": {
-        "id": 9,
+        "id": 5,
         "header": "REACT Portfolio",
         "altName": "reactPortfolio",
         "description": "This project is intended to be a demonstration of my usage of REACT. I've recreated my original developer portfolio and have added in a carousel that opens into a modal with additional information on each project. I've also added a basic resume to the portfolio as well as links to my Github, Stack Overflow, and LinkedIn accounts.",
         "languages": ["Node", "React", "Semantic-UI-React", "Bootstrap", "HTML", "Javascript", "CSS"],
         "repository": "https://github.com/SmithBWare89/REACT-Portfolio",
         "deployed": "https://smithbware89.github.io/REACT-Portfolio/"
+    },
+    "chatroomapp": {
+        "id": 6,
+        "header": "Chatroom Application",
+        "altName": "chatroomapp",
+        "description": "Developed full stack applications via Vue, Vue-Router, and Firebase. Leveraged composition API structure to build components. Utilized FIrebase for hosting and storage of all comment data, while tracking user's authentication to allow application for serving data. Tested and designed API endpoints via JSON Server.",
+        "languages": ["Node", "Vue", "Vue Router", "Firebase", "HTML", "Javascript", "CSS"],
+        "repository": "https://tinyurl.com/chat-app-repository%20",
+        "deployed": "https://tinyurl.com/chatroom-app"
     },
     "appIcons": {
         "bootstrap" : "../../assets/images/bootstrap.png",
