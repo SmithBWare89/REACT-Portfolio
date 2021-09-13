@@ -4,7 +4,6 @@ import { Modal, Button } from 'react-bootstrap';
 import Magnifier from "react-magnifier";
 import resumeImage from '../../assets/images/resume.png';
 import resumeImage2 from '../../assets/images/resume2.png';
-import resumeImage3 from '../../assets/images/resume3.png';
 
 export default function Resume() {
     const [open, setOpen] = useState(false);
@@ -14,10 +13,7 @@ export default function Resume() {
             setImage(resumeImage)
         } else if (evt.target.name === 'resumeImage2') {
             setImage(resumeImage2)
-        } else if (evt.target.name === 'resumeImage3') {
-            setImage(resumeImage3)
-        }
-
+        } 
         return setOpen(true);
     }
     const handleClose = () => setOpen(false);
@@ -26,15 +22,12 @@ export default function Resume() {
         <section>
             <Container>
                 <Header className='resume-header'>Click to Magnify</Header>
-                <Grid columns={3} stackable={true}>
+                <Grid columns={2} stackable={true}>
                     <Grid.Column>
                         <Image className="resume-image" name='resumeImage' src={resumeImage} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
                     </Grid.Column>
                     <Grid.Column>
                         <Image className="resume-image" name='resumeImage2' src={resumeImage2} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
-                    </Grid.Column>
-                    <Grid.Column>
-                        <Image className="resume-image" name='resumeImage3' src={resumeImage3} onClick={handleOpen} centered={true} alt='A photo copy of my work resume.'/>
                     </Grid.Column>
                 </Grid>
             </Container>
@@ -63,7 +56,7 @@ export default function Resume() {
                         onClick={handleClose}
                     >
                         <a 
-                                href={'https://docs.google.com/document/d/12WD5M30YpEIaFR_-V7CxwfBqvGT3XXTd/edit?usp=sharing&ouid=112589527590195417361&rtpof=true&sd=true'}
+                                href={'https://docs.google.com/document/d/1ZnlpK13Xhcfs4xwDWKyTWN8-xyInqB5vPmrWv174b5o/edit?usp=sharing'}
                                 download="Stephon Smith Resume"
                                 style={{ color: '#f7f7ff' }}
                                 name='resume'
