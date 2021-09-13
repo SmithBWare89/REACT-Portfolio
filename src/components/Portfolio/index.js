@@ -10,7 +10,7 @@ import pwaBudgetImage from '../../assets/images/pwaBudget.png';
 import ollieWilliamsImage from '../../assets/images/ollieWilliams.png';
 import reduxECommerceStoreImage from '../../assets/images/eCommerceRefactor.png';
 import reactPortfolioImage from '../../assets/images/reactPortfolio.JPG';
-import chatroomapp from '../../assets/images/chatroomapp.png';
+import chatroomappImage from '../../assets/images/chatroomapp.png';
 
 export default function Portfolio() {
     // Bring in new project
@@ -104,19 +104,19 @@ export default function Portfolio() {
                             </Button>
                         </Card>
                     </Grid.Column>
-                        {/* Drinkology */}
+                        {/* Chatroom App */}
                     <Grid.Column>
                         <Card
                             fluid
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={chatroomapp} className='project-card-image' alt='A snapshot of my project that searches for cocktail recipes.'/>
+                            <Image src={chatroomappImage} className='project-card-image' alt='A snapshot of my project that allows you to chat with friends in real time.'/>
                             <Card.Content className='project-card-content'>
                                 <Card.Header as='h1' className='project-card-header card-adjustment-header'>{chatroomapp.header}</Card.Header>
                                 <Card.Meta className='project-card-meta card-adjustment-meta' content={populateLanguages(chatroomapp.languages)}></Card.Meta>
                             </Card.Content>
-                            <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='drinkology'>
+                            <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='chatroomapp'>
                                 Show More Info
                             </Button>
                         </Card>
