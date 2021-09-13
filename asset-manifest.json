@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/REACT-Portfolio/static/css/main.1b9239e8.chunk.css",
-    "main.js": "/REACT-Portfolio/static/js/main.44a34559.chunk.js",
-    "main.js.map": "/REACT-Portfolio/static/js/main.44a34559.chunk.js.map",
+    "main.js": "/REACT-Portfolio/static/js/main.07d9ae75.chunk.js",
+    "main.js.map": "/REACT-Portfolio/static/js/main.07d9ae75.chunk.js.map",
     "runtime-main.js": "/REACT-Portfolio/static/js/runtime-main.14acec70.js",
     "runtime-main.js.map": "/REACT-Portfolio/static/js/runtime-main.14acec70.js.map",
     "static/css/2.3c5f7337.chunk.css": "/REACT-Portfolio/static/css/2.3c5f7337.chunk.css",
@@ -24,9 +24,8 @@
     "static/media/reactPortfolio.538bb9b4.JPG": "/REACT-Portfolio/static/media/reactPortfolio.538bb9b4.JPG",
     "static/media/readmeGenerator.f75e2168.png": "/REACT-Portfolio/static/media/readmeGenerator.f75e2168.png",
     "static/media/regexGist.16cf5ff4.png": "/REACT-Portfolio/static/media/regexGist.16cf5ff4.png",
-    "static/media/resume.7efef343.png": "/REACT-Portfolio/static/media/resume.7efef343.png",
-    "static/media/resume2.8d5f4059.png": "/REACT-Portfolio/static/media/resume2.8d5f4059.png",
-    "static/media/resume3.124d02dc.png": "/REACT-Portfolio/static/media/resume3.124d02dc.png",
+    "static/media/resume.245871d1.png": "/REACT-Portfolio/static/media/resume.245871d1.png",
+    "static/media/resume2.f06a2ffc.png": "/REACT-Portfolio/static/media/resume2.f06a2ffc.png",
     "static/media/scriptifyQuiz.f33195a1.png": "/REACT-Portfolio/static/media/scriptifyQuiz.f33195a1.png",
     "static/media/teamProfile.7844932c.jpg": "/REACT-Portfolio/static/media/teamProfile.7844932c.jpg"
   },
@@ -35,6 +34,6 @@
     "static/css/2.3c5f7337.chunk.css",
     "static/js/2.b8f63ca9.chunk.js",
     "static/css/main.1b9239e8.chunk.css",
-    "static/js/main.44a34559.chunk.js"
+    "static/js/main.07d9ae75.chunk.js"
   ]
 }
