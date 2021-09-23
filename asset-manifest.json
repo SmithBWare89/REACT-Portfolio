@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/REACT-Portfolio/static/css/main.1b9239e8.chunk.css",
-    "main.js": "/REACT-Portfolio/static/js/main.71b0680e.chunk.js",
-    "main.js.map": "/REACT-Portfolio/static/js/main.71b0680e.chunk.js.map",
+    "main.js": "/REACT-Portfolio/static/js/main.8a4ab274.chunk.js",
+    "main.js.map": "/REACT-Portfolio/static/js/main.8a4ab274.chunk.js.map",
     "runtime-main.js": "/REACT-Portfolio/static/js/runtime-main.14acec70.js",
     "runtime-main.js.map": "/REACT-Portfolio/static/js/runtime-main.14acec70.js.map",
     "static/css/2.3c5f7337.chunk.css": "/REACT-Portfolio/static/css/2.3c5f7337.chunk.css",
@@ -24,13 +24,13 @@
     "static/media/pwaBudget.32652f16.png": "/REACT-Portfolio/static/media/pwaBudget.32652f16.png",
     "static/media/reactPortfolio.538bb9b4.JPG": "/REACT-Portfolio/static/media/reactPortfolio.538bb9b4.JPG",
     "static/media/resume.0587cc4a.png": "/REACT-Portfolio/static/media/resume.0587cc4a.png",
-    "static/media/resume2.de4b56bf.png": "/REACT-Portfolio/static/media/resume2.de4b56bf.png"
+    "static/media/resume2.978942ee.png": "/REACT-Portfolio/static/media/resume2.978942ee.png"
   },
   "entrypoints": [
     "static/js/runtime-main.14acec70.js",
     "static/css/2.3c5f7337.chunk.css",
     "static/js/2.84e314fc.chunk.js",
     "static/css/main.1b9239e8.chunk.css",
-    "static/js/main.71b0680e.chunk.js"
+    "static/js/main.8a4ab274.chunk.js"
   ]
 }
