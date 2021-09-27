@@ -9,19 +9,19 @@ import soShulImage from '../../assets/images/soShul.png';
 import pwaBudgetImage from '../../assets/images/pwaBudget.png';
 import ollieWilliamsImage from '../../assets/images/ollieWilliams.png';
 import reduxECommerceStoreImage from '../../assets/images/eCommerceRefactor.png';
-import reactPortfolioImage from '../../assets/images/reactPortfolio.JPG';
 import chatroomappImage from '../../assets/images/chatroomapp.png';
+import fitUniverseImage from '../../assets/images/fituniverse.png'
 
 export default function Portfolio() {
     // Bring in new project
      const {
-        reactPortfolio,
         drinkology,
         pwaBudget,
         soShul,
         ollieWilliamsWeather,
         reduxECommerceStore,
-        chatroomapp
+        chatroomapp,
+        fitUniverse
     } = projects
 
     const [show, setShow] = useState(false);
@@ -37,8 +37,8 @@ export default function Portfolio() {
             'soShul',
             'ollieWilliamsWeather',
             'reduxECommerceStore',
-            'reactPortfolio',
-            'chatroomapp'
+            'chatroomapp',
+            'fitUniverse'
         ];
 
         const found = projects.find(element => element === evt.target.name);
@@ -65,8 +65,8 @@ export default function Portfolio() {
                 setProject(reduxECommerceStore);
                 setShow(true)
                 break;
-            case 'reactPortfolio':
-                setProject(reactPortfolio);
+            case 'fitUniverse':
+                setProject(fitUniverse);
                 setShow(true);
                 break;
             case 'chatroomapp':
@@ -123,21 +123,21 @@ export default function Portfolio() {
                     </Grid.Column>
                 </Grid.Row>
 
-                {/* Portfolio and So-Shul */}
+                {/* Fit Universe and So-Shul */}
                 <Grid.Row>
-                    {/* REACT Portfolio */}
+                    {/* Fit Universe */}
                     <Grid.Column>
                         <Card
                             fluid
                             onClick={handleModalShow}
                             className='project-card'
                         >
-                            <Image src={reactPortfolioImage} className='project-card-image' alt='A snapshot of my REACT portfolio project.' />
+                            <Image src={fitUniverseImage} className='project-card-image' alt='A snapshot of my Fit Universe project.' />
                             <Card.Content className='project-card-content'>
-                                <Card.Header as='h1' className='project-card-header card-adjustment-header'>{reactPortfolio.header}</Card.Header>
-                                <Card.Meta className='project-card-meta card-adjustment-meta' content={populateLanguages(reactPortfolio.languages)}></Card.Meta>
+                                <Card.Header as='h1' className='project-card-header card-adjustment-header'>{fitUniverse.header}</Card.Header>
+                                <Card.Meta className='project-card-meta card-adjustment-meta' content={populateLanguages(fitUniverse.languages)}></Card.Meta>
                             </Card.Content>
-                            <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='reactPortfolio'>
+                            <Button className='project-button-style' variant="primary" onClick={handleModalShow} name='fitUniverse'>
                                 Show More Info
                             </Button>
                         </Card>

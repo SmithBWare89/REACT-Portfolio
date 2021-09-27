@@ -78,6 +78,15 @@
         "repository": "https://tinyurl.com/chat-app-repository%20",
         "deployed": "https://tinyurl.com/chatroom-app"
     },
+    "fitUniverse": {
+        "id": 7,
+        "header": "Fit Universe",
+        "altName": "fitUniverse",
+        "description":"'Fit-Universe' was created to be a demonstration of Vue's composition API, state management capabilities with Vue version 3 (provide/inject), and a way users can chat in real time while also inputting their workout into the database.",
+        "languages": ["HTML", "CSS", "JavaScript", "Vue", "Naive UI", "Vue Router", "Firebase"],
+        "repository": "https://github.com/SmithBWare89/vue-fit-universe",
+        "deployed": "https://fit-universe-224e7.web.app/"
+    },
     "appIcons": {
         "bootstrap" : "../../assets/images/bootstrap.png",
         "css3" : "../../assets/images/css3.png",
